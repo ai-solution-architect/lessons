@@ -1,7 +1,3 @@
-Com base na sua solicitação, converti a fonte "Guia de Estudo: O Cenário AI/ML" em um formato Markdown claro e estruturado, conforme solicitado. O conteúdo foi compilado de todas as partes da fonte que você forneceu.
-
----
-
 # Guia de Estudo: O Cenário AI/ML
 
 Este guia de estudo foi elaborado para revisar sua compreensão dos materiais da aula "The AI/ML Landscape".
