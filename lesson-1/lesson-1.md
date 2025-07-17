@@ -1,7 +1,3 @@
-Com certeza! Abaixo está o conteúdo completo da apresentação "The AI_ML Landscape", formatado em Markdown e com os gráficos convertidos para o padrão Mermaid, conforme solicitado.
-
----
-
 # O Cenário de IA/ML: Arquitetura de Soluções de IA
 
 ## Visão Geral do Curso
