@@ -1,7 +1,3 @@
-Com base na sua solicitação, converti a fonte "FAQ: IA Clássica vs. IA Generativa" em um formato Markdown claro e estruturado, conforme pedido.
-
----
-
 # FAQ: IA Clássica vs. IA Generativa
 
 ## Perguntas Frequentes sobre IA/ML
