@@ -68,7 +68,7 @@ graph TD
 
     B1 --> B1a(Regressão)
     B1 --> B1b(Classificação)
-    B1 --> B1c(Árvores Impulsionadas por Gradiente (XGBoost))
+    B1 --> B1c["Árvores Impulsionadas por Gradiente (XGBoost)"]
     B1 --> B1d(Recomendação)
 
     B2 --> B2a(PCA)
@@ -76,7 +76,7 @@ graph TD
     B2 --> B2c(Agrupamento)
     B2 --> B2d(Filtragem Colaborativa)
 
-    B3 --> B3a(Otimização de Políticas (PPO))
+    B3 --> B3a(Otimização de Políticas $PPO$)
     B3 --> B3b(Q-Learning)
     B3 --> B3c(Aprendizado por Reforço Profundo)
 
@@ -95,69 +95,157 @@ Os padrões de Inteligência Artificial ramificam-se em várias áreas de aplica
 
 ```mermaid
 graph TD
-    AI_Patterns[Padrões de Inteligência Artificial] --> NL_Understanding(Compreensão de Linguagem Natural)
-    AI_Patterns --> Robotics(Robótica e Automação)
-    AI_Patterns --> Structured_Data(Dados Estruturados)
-    AI_Patterns --> Recommender_Systems(Sistemas de Recomendação)
-    AI_Patterns --> Computer_Vision(Visão Computacional)
-    AI_Patterns --> Generative_Systems(Sistemas Generativos)
+    AI_Patterns[Padrões de Inteligência Artificial]
 
-    NL_Understanding --> C_AI(IA Conversacional)
-    NL_Understanding --> CC_Intelligence(Inteligência do Contact Center)
-    NL_Understanding --> Chatbots(Chatbots)
-    NL_Understanding --> ASR(Reconhecimento Automático de Fala)
-    NL_Understanding --> Translation(Tradução)
-    NL_Understanding --> Sentiment(Análise de Sentimento)
+    %% Subgraph: Compreensão de Linguagem Natural
+    subgraph NLP [Compreensão de Linguagem Natural]
+        NLP_Conversational(IA Conversacional)
+        NLP_ContactCenter(Inteligência do Contact Center)
+        NLP_Chatbots(Chatbots)
+        NLP_ASR(Reconhecimento Automático de Fala)
+        NLP_Translation(Tradução)
+        NLP_Sentiment(Análise de Sentimento)
+    end
 
-    Robotics --> RL(Aprendizado por Reforço)
-    Robotics --> Sensing(Sensoriamento)
-    Robotics --> Actuation(Atuação)
-    Robotics --> CLC(Controle de Loop Fechado)
-    Robotics --> AD(Condução Autônoma)
-    Robotics --> Optimisation(Otimização)
+    %% Subgraph: Robótica e Automação
+    subgraph Robotics_Group [Robótica e Automação]
+        Robotics_RL(Aprendizado por Reforço)
+        Robotics_Sensing(Sensoriamento)
+        Robotics_Actuation(Atuação)
+        Robotics_LoopControl(Controle de Loop Fechado)
+        Robotics_AutonomousDrive(Condução Autônoma)
+        Robotics_Optimization(Otimização)
+    end
 
-    Structured_Data --> Regression(Regressão)
-    Structured_Data --> Classification(Classificação)
-    Structured_Data --> Clustering(Agrupamento)
-    Structured_Data --> Time_Series(Séries Temporais)
-    Structured_Data --> Forecasting(Previsão)
-    Structured_Data --> Multivariate_Analysis(Análise Multivariada)
+    %% Subgraph: Dados Estruturados
+    subgraph Structured_Data [Dados Estruturados]
+        Data_Regression(Regressão)
+        Data_Classification(Classificação)
+        Data_Clustering(Agrupamento)
+        Data_TimeSeries(Séries Temporais)
+        Data_Forecasting(Previsão)
+        Data_Multivariate(Análise Multivariada)
+    end
 
-    Recommender_Systems --> Personalisation(Personalização)
-    Recommender_Systems --> Segmentation(Segmentação)
-    Recommender_Systems --> Hyper_Personalisation(Hiper-Personalização)
-    Recommender_Systems --> Subtopic4(Subtópico 4)
+    %% Subgraph: Sistemas de Recomendação
+    subgraph Recommender [Sistemas de Recomendação]
+        Rec_Personalisation(Personalização)
+        Rec_Segmentation(Segmentação)
+        Rec_HyperPersonalisation(Hiper-Personalização)
+        Rec_Filtering(Filtragem Colaborativa)
+    end
 
-    Computer_Vision --> OD(Detecção de Objetos)
-    Computer_Vision --> FR(Reconhecimento Facial)
-    Computer_Vision --> OR(Reconhecimento de Objeto)
-    Computer_Vision --> Biometrics(Biometria)
-    Computer_Vision --> IDP(Processamento Inteligente de Documentos)
-    Computer_Vision --> SS(Segmentação Semântica)
-    Computer_Vision --> FDM(Detecção e Monitoramento de Falhas)
+    %% Subgraph: Visão Computacional
+    subgraph ComputerVision [Visão Computacional]
+        CV_ObjectDetection(Detecção de Objetos)
+        CV_FaceRecognition(Reconhecimento Facial)
+        CV_ObjectRecognition(Reconhecimento de Objeto)
+        CV_Biometrics(Biometria)
+        CV_IDP(Processamento Inteligente de Documentos)
+        CV_SemanticSegmentation(Segmentação Semântica)
+        CV_FailureDetection(Detecção e Monitoramento de Falhas)
+    end
 
-    Generative_Systems --> L_L_Models(Grandes Modelos de Linguagem)
-    Generative_Systems --> Diffusion_Models(Modelos de Difusão)
-    Generative_Systems --> GANs(Redes Generativas Adversariais)
+    %% Subgraph: Sistemas Generativos
+    subgraph Generative_Systems [Sistemas Generativos]
+        Gen_LLMs(Grandes Modelos de Linguagem)
+        Gen_Diffusion(Modelos de Difusão)
+        Gen_GANs(Redes Generativas Adversariais)
+    end
 
-    L_L_Models --> DS(Resumo de Documentos)
-    L_L_Models --> QA_Assistant(Assistente de Perguntas e Respostas)
-    L_L_Models --> KB_Q_A(Perguntas e Respostas Baseadas em Conhecimento)
-    L_L_Models --> SEM_EMB_S(Incorporação Semântica e Busca)
-    L_L_Models --> Reasoning(Raciocínio)
-    L_L_Models --> Prompt_Eng(Engenharia de Prompt)
-    L_L_Models --> Multi_Agents(Multi-Agentes)
+    %% Subgraph: LLMs
+    subgraph LLMs [Grandes Modelos de Linguagem]
+        LLM_Summarization(Resumo de Documentos)
+        LLM_QA(Assistente de Perguntas e Respostas)
+        LLM_KBQA(Perguntas e Respostas Baseadas em Conhecimento)
+        LLM_SemanticEmb(Incorporação Semântica e Busca)
+        LLM_Reasoning(Raciocínio)
+        LLM_PromptEng(Engenharia de Prompt)
+        LLM_MultiAgents(Multi-Agentes)
+    end
 
-    Diffusion_Models --> T_V(Texto para Vídeo)
-    Diffusion_Models --> T_I(Texto para Imagem)
-    Diffusion_Models --> I_G(Geração de Imagem)
-    Diffusion_Models --> V_T(Vídeo para Texto)
-    Diffusion_Models --> Multi_Modal(Multi-modal)
+    %% Subgraph: Modelos de Difusão
+    subgraph DiffusionModels [Modelos de Difusão]
+        Diff_TextVideo(Texto para Vídeo)
+        Diff_TextImage(Texto para Imagem)
+        Diff_ImageGen(Geração de Imagem)
+        Diff_VideoText(Vídeo para Texto)
+        Diff_MultiModal(Multi-modal)
+    end
 
-    GANs --> SR(Super-resolução)
-    GANs --> SDG(Geração de Dados Sintéticos)
-    GANs --> I_I_STS(Imagem para Imagem (Transferência de Estilo))
-    GANs --> Denoising(Remoção de Ruído)
+    %% Subgraph: GANs
+    subgraph GANs_Group [Redes Generativas Adversariais]
+        GAN_SuperRes(Super-resolução)
+        GAN_SynthData(Geração de Dados Sintéticos)
+        GAN_StyleTransfer(Imagem para Imagem - Transferência de Estilo)
+        GAN_Denoising(Remoção de Ruído)
+    end
+
+    %% Hierarquia principal
+    AI_Patterns --> NLP
+    AI_Patterns --> Robotics_Group
+    AI_Patterns --> Structured_Data
+    AI_Patterns --> Recommender
+    AI_Patterns --> ComputerVision
+    AI_Patterns --> Generative_Systems
+
+    %% Relações internas
+    NLP --> NLP_Conversational
+    NLP --> NLP_ContactCenter
+    NLP --> NLP_Chatbots
+    NLP --> NLP_ASR
+    NLP --> NLP_Translation
+    NLP --> NLP_Sentiment
+
+    Robotics_Group --> Robotics_RL
+    Robotics_Group --> Robotics_Sensing
+    Robotics_Group --> Robotics_Actuation
+    Robotics_Group --> Robotics_LoopControl
+    Robotics_Group --> Robotics_AutonomousDrive
+    Robotics_Group --> Robotics_Optimization
+
+    Structured_Data --> Data_Regression
+    Structured_Data --> Data_Classification
+    Structured_Data --> Data_Clustering
+    Structured_Data --> Data_TimeSeries
+    Structured_Data --> Data_Forecasting
+    Structured_Data --> Data_Multivariate
+
+    Recommender --> Rec_Personalisation
+    Recommender --> Rec_Segmentation
+    Recommender --> Rec_HyperPersonalisation
+    Recommender --> Rec_Filtering
+
+    ComputerVision --> CV_ObjectDetection
+    ComputerVision --> CV_FaceRecognition
+    ComputerVision --> CV_ObjectRecognition
+    ComputerVision --> CV_Biometrics
+    ComputerVision --> CV_IDP
+    ComputerVision --> CV_SemanticSegmentation
+    ComputerVision --> CV_FailureDetection
+
+    Generative_Systems --> Gen_LLMs
+    Generative_Systems --> Gen_Diffusion
+    Generative_Systems --> Gen_GANs
+
+    Gen_LLMs --> LLM_Summarization
+    Gen_LLMs --> LLM_QA
+    Gen_LLMs --> LLM_KBQA
+    Gen_LLMs --> LLM_SemanticEmb
+    Gen_LLMs --> LLM_Reasoning
+    Gen_LLMs --> LLM_PromptEng
+    Gen_LLMs --> LLM_MultiAgents
+
+    Gen_Diffusion --> Diff_TextVideo
+    Gen_Diffusion --> Diff_TextImage
+    Gen_Diffusion --> Diff_ImageGen
+    Gen_Diffusion --> Diff_VideoText
+    Gen_Diffusion --> Diff_MultiModal
+
+    Gen_GANs --> GAN_SuperRes
+    Gen_GANs --> GAN_SynthData
+    Gen_GANs --> GAN_StyleTransfer
+    Gen_GANs --> GAN_Denoising
 ```
 
 ## Método Clássico de IA/ML
