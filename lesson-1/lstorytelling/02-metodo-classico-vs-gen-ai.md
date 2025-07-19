@@ -1,3 +1,5 @@
+## Método Clássico de IA/ML vs Método de IA Generativa
+
 ### O Método Clássico de IA/ML: Uma Jornada Estruturada
 
 O desenvolvimento e a implantação de modelos de IA/ML, seguindo o método clássico de ciência de dados, envolvem um fluxo de trabalho estruturado.
