@@ -1,0 +1,3 @@
+# Lesson 9 - Generative AI / Concepts and Basic Use
+
+Este material de aula, intitulado "Lesson 9 - Generative AI / Concepts and Basic Use", oferece uma introdução abrangente à Inteligência Artificial Generativa. O objetivo é explicar como a IA pode criar conteúdo novo e original – como texto, imagens, código e áudio – aprendendo padrões de vastos conjuntos de dados. O conteúdo aborda desde os conceitos fundamentais da IA Generativa e as capacidades dos Grandes Modelos de Linguagem (LLMs) até detalhes técnicos sobre a arquitetura Transformer e métodos como a atenção própria (self-attention). Além disso, explora técnicas avançadas como Modelos de Difusão para geração de imagens e Modelos de Raciocínio, destacando suas aplicações práticas e a evolução dessas tecnologias.
