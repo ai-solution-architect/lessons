@@ -1278,3 +1278,65 @@ Com certeza! Abaixo está o conteúdo do glossário atualizado, incorporando os 
 *   **Significado:** Uma métrica que mede a média dos quadrados dos erros (a diferença entre os valores previstos e os valores reais). É **usado em Árvores de Decisão para regressão para determinar as divisões** dos dados.
 *   **Explicação para leigos:** É uma forma de calcular o "tamanho" médio dos erros de uma IA, penalizando erros maiores de forma mais severa. Nas árvores de decisão, ajuda a decidir qual a melhor forma de dividir os dados para tornar as previsões mais precisas.
 *   **Indicador de Qualidade:** O MSE diminui ao longo da árvore de decisão (refletindo melhor homogeneidade nos grupos de dados).
+
+##### 256. **Matriz de Confusão | Confusion Matrix**
+*   **Significado:** Uma tabela usada para **avaliar o desempenho de um algoritmo de classificação, mostrando os resultados previstos em comparação com as classes verdadeiras**. Ela resume as contagens de previsões corretas e incorretas para cada classe.
+*   **Explicação para leigos:** No contexto das métricas de classificação, ela **representa os resultados possíveis da IA:** o que ela acertou e o que errou, comparando o que ela previu com o que realmente era.
+*   **Aplicação:** Usada para calcular métricas como Acurácia, Precisão, Recall e F1-Score em problemas de classificação.
+
+##### 257. **Escalonamento de Features | Feature Scaling**
+*   **Significado:** Um passo de pré-processamento de dados onde **as variáveis numéricas de um conjunto de dados são ajustadas para estarem em uma escala comum**.
+*   **Explicação para leigos:** É como padronizar todas as unidades de medida (por exemplo, transformar tudo em metros) para que a IA não dê mais importância a um dado só porque ele tem números maiores.
+*   **Aplicação:** Importante para muitos algoritmos como K-NN e K-Means, que são sensíveis à escala das features.
+
+##### 258. **A/B Testing | A/B Testing**
+*   **Significado:** Uma estratégia de teste onde **duas ou mais versões de um modelo ou recurso são comparadas para ver qual tem melhor desempenho**.
+*   **Explicação para leigos:** É como ter duas versões de um anúncio (A e B) e mostrar para pessoas diferentes para ver qual delas funciona melhor.
+*   **Aplicação:** Parte do pipeline de implantação para comparar o desempenho de diferentes versões de modelos em produção.
+
+##### 259. **Canary Releases | Canary Releases**
+*   **Significado:** Uma estratégia de implantação para **lançar gradualmente uma nova versão de um serviço ou modelo para um pequeno subconjunto de usuários antes de liberá-la para todos**.
+*   **Explicação para leigos:** É como testar um novo recurso em um grupo pequeno de usuários para ter certeza de que tudo funciona bem antes de liberar para todo mundo.
+*   **Aplicação:** Usado no pipeline de implantação para reduzir o risco de introduzir problemas com novas versões de modelos.
+
+##### 260. **Early Stopping | Early Stopping**
+*   **Significado:** Uma técnica de regularização que **interrompe o treinamento de um modelo quando o desempenho nos dados de validação para de melhorar**, mesmo que o desempenho nos dados de treinamento continue melhorando. É uma estratégia para evitar o desperdício de tempo em regiões de erro alto.
+*   **Explicação para leigos:** É como um treinador que para de treinar seu time quando percebe que ele já está no seu melhor, mesmo que ainda possa "tentar mais", para evitar que ele fique cansado e comece a piorar.
+*   **Aplicação:** Usado para prevenir o overfitting e economizar recursos computacionais no treinamento de redes neurais e outros modelos.
+
+##### 261. **ETL Pipelines | ETL Pipelines**
+*   **Significado:** Processos de **Extração, Transformação e Carregamento de dados para fins de data warehousing ou análise**.
+*   **Explicação para leigos:** É como uma "linha de montagem" de dados: primeiro você tira os dados de vários lugares (Extração), depois os limpa e organiza (Transformação), e por fim os guarda em um grande depósito (Carregamento) para serem usados pela IA.
+*   **Aplicação:** Usado no processamento em lote para preparar grandes volumes de dados periodicamente para modelos de Machine Learning.
+
+##### 262. **LORA (Low-Rank Adaptation) | LORA (Low-Rank Adaptation)**
+*   **Significado:** Uma técnica de ajuste fino para LLMs que **adapta um subconjunto de pesos para se adaptar a um novo domínio ou tarefa de forma mais eficiente**.
+*   **Explicação para leigos:** É como ensinar uma IA gigante a se especializar em um assunto novo, mas sem precisar mudar todo o seu "cérebro". Ela só ajusta algumas partes, tornando o aprendizado mais rápido e barato.
+*   **Aplicação:** Usado na adaptação de domínio / ajuste fino de LLMs para casos de uso pretendidos, frequentemente em conjunto com PEFT (Parameter-Efficient Fine-Tuning).
+
+##### 263. **MAE (Mean Absolute Error) | MAE (Mean Absolute Error)**
+*   **Significado:** Uma métrica de regressão que **mede a média das magnitudes dos erros em um conjunto de previsões**, sem considerar sua direção.
+*   **Explicação para leigos:** É uma forma simples de medir o "tamanho médio" do erro de uma previsão da IA, ignorando se ela previu para mais ou para menos. Quanto menor o MAE, melhor.
+*   **Aplicação:** Usado para avaliar o desempenho de modelos de regressão.
+
+##### 264. **N_estimators | N_estimators**
+*   **Significado:** Um hiperparâmetro em modelos baseados em árvore (como Random Forest ou Gradient Boosting) que **define o número de árvores no ensemble**.
+*   **Explicação para leigos:** É como decidir quantos "consultores especialistas" (árvores de decisão) você quer ter em sua equipe de IA. Mais consultores geralmente significa uma decisão mais robusta.
+*   **Aplicação:** Ajuste em modelos como Random Forest, Gradient Boosting e XGBoost para controlar a complexidade e o desempenho.
+
+##### 265. **PEFT (Parameter-Efficient Fine-Tuning) | PEFT (Parameter-Efficient Fine-Tuning)**
+*   **Significado:** Um conjunto de técnicas que **permitem o ajuste fino de modelos grandes de forma mais eficiente**, como LORA.
+*   **Explicação para leigos:** São métodos inteligentes para "ensinar" uma IA muito grande a fazer algo novo, mas sem gastar muito tempo e recursos. É como se a IA aprendesse um atalho.
+*   **Aplicação:** Usado na adaptação de domínio / ajuste fino de LLMs para otimizar o treinamento de modelos específicos para casos de uso.
+
+##### 266. **Retraining Loops | Retraining Loops**
+*   **Significado:** Um sistema automatizado que **retreina um modelo quando seu desempenho se degrada ou quando novas condições de dados são detectadas**.
+*   **Explicação para leigos:** É como um "alarme" que, quando percebe que a IA está começando a errar muito ou que a realidade mudou, automaticamente a manda de volta para a "escola" para aprender de novo com os dados mais recentes.
+*   **Aplicação:** Parte do pipeline de monitoramento e manutenção de modelos, para lidar com data drift e model drift e garantir a manutenção contínua do desempenho.
+
+##### 267. **Test-Time Compute & Reasoning | Test-Time Compute & Reasoning**
+*   **Significado:** Alocar mais recursos computacionais **durante a inferência para melhorar a qualidade do raciocínio** em LLMs.
+*   **Explicação para leigos:** É como dar mais tempo e "poder de processamento" para a IA pensar melhor e dar uma resposta mais inteligente na hora em que você faz uma pergunta, mesmo que ela já esteja "treinada".
+*   **Aplicação:** Usado para melhorar o desempenho de LLMs em tempo de execução através de técnicas como Chain-of-Thought, Self-Consistency e GPRO.
+
+---
