@@ -81,14 +81,14 @@
 *   **Aplicação:** Identificar segmentos de clientes em *marketing* ou agrupar notícias por assunto. Modelos de linguagem como GPT aprendem padrões em texto sem respostas prontas através de aprendizado auto-supervisionado.
 
 ##### 17. **Aprendizado por Reforço | Reinforcement Learning**
-*   **Significado:** Técnica onde um agente aprende por tentativa e erro, recebendo recompensas pelas ações, sendo um campo do aprendizado de máquina onde agentes interagem com um ambiente, tomam ações, recebem recompensas e aprendem políticas ótimas para maximizar recompensas cumulativas. Algoritmos notáveis incluem Q-Learning, Deep Q-Networks (DQN), REINFORCE, Proximal Policy Optimization (PPO), Actor-Critic (como A3C e SAC), e o **Aprendizado por Reforço com Feedback Humano (RLHF)**.
+*   **Significado:** Técnica onde um agente aprende por tentativa e erro, recebendo recompensas pelas ações, sendo um campo do aprendizado de máquina onde agentes interagem com um ambiente, tomam ações, recebem recompensas e aprendem políticas ótimas para maximizar recompensas cumulativas.
 *   **Explicação para leigos:** Um robô aprende o melhor caminho como um cachorro treinado por recompensas. É como treinar um cachorro: ele faz algo, recebe uma recompensa (ou não), e aprende a fazer as coisas que dão mais recompensas.
-*   **Aplicação:** Jogos (ex: xadrez, Go, Atari), direção autônoma e robótica, jogos de IA, veículos autônomos e alinhamento de IA (como o uso do algoritmo PPO para alinhar modelos de linguagem com preferências humanas). O RLHF é usado para refinar modelos de IA com feedback humano e torná-los mais úteis e seguros .
+*   **Aplicação:** Jogos (ex: xadrez, Go), direção autônoma e robótica, jogos de IA, veículos autônomos e alinhamento de IA (como o uso do algoritmo PPO para alinhar modelos de linguagem com preferências humanas).
 
 ##### 18. **Aprendizado Supervisionado | Supervised Learning**
-*   **Significado:** Método de aprendizado com base em exemplos rotulados onde o resultado correto é fornecido. No pipeline de IA Generativa, o **Ajuste Fino Supervisionado (SFT)** é uma etapa crucial que utiliza essa abordagem.
-*   **Explicação para leigos:** Como ensinar a máquina mostrando perguntas e as respostas certas.
-*   **Aplicação:** Reconhecer rostos em fotos, detectar fraudes em cartões de crédito. Utilizado para adaptar modelos grandes para tarefas específicas e para alinhamento de IA.
+*   **Significado:** Um método de aprendizado de máquina onde o algoritmo aprende com **dados rotulados (pares de entrada-saída), nos quais as respostas corretas já são conhecidas**. Usa esse conhecimento para prever a saída de novos dados.
+*   **Explicação para leigos:** Como ensinar a máquina mostrando perguntas e as respostas certas, um "aprendizado com um professor".
+*   **Aplicação:** Reconhecer rostos em fotos, detectar fraudes em cartões de crédito, detecção de spam em e-mail, diagnóstico médico, previsão de preços, reconhecimento de voz, previsão de preços de casas, reconhecimento de imagem.
 
 ##### 19. **Arquitetura de Deep Learning | Deep Learning Architecture**
 *   **Significado:** Refere-se à estrutura de redes neurais que incluem camadas de entrada, ocultas e de saída com conexões ponderadas e funções de ativação. As arquiteturas avançadas de deep learning incluem **Redes Neurais Convolucionais (CNNs)** para imagens, **Redes Neurais Recorrentes (RNNs)** e suas variações como **LSTMs** e **GRUs** para sequências, a inovadora **Arquitetura Transformer** que impulsiona os **LLMs**, **Modelos de Difusão** para geração, e **Mistura de Especialistas (MoE)** para eficiência e escalabilidade.
@@ -191,7 +191,7 @@
 *   **Aplicação:** *Chatbots* analisando grandes manuais técnicos, ou preparando dados para sistemas RAG buscarem informações relevantes.
 
 ##### 38. **Classificação de Imagens | Image Classification**
-*   **Significado:** Uma tarefa de Visão Computacional (CV) que atribui um único rótulo de categoria a uma imagem inteira. É uma aplicação comum das **Redes Convolucionais (CNNs)**.
+*   **Significado:** Uma tarefa de Visão Computacional (CV) que atribui um único rótulo de categoria a uma imagem inteira.
 *   **Explicação para leigos:** É quando o computador olha para uma foto inteira e diz o que ela é, por exemplo, "isso é um gato" ou "isso é um carro".
 *   **Aplicação:** Controle de qualidade em imagens médicas, categorização de produtos, segurança e organização de fotos.
 
@@ -236,9 +236,9 @@
 *   **Aplicação:** Revisar modelos preditivos em bancos e comércio eletrônico frequentemente.
 
 ##### 47. **Deep Learning (Aprendizado Profundo) | Deep Learning**
-*   **Significado:** Subárea da inteligência artificial focada em redes neurais profundas com múltiplas camadas. Combina múltiplas arquiteturas para reconhecimento e previsão de padrões complexos, sendo fundamental em PLN, Visão Computacional e Análise de Séries Temporais.
+*   **Significado:** Subárea da inteligência artificial focada em redes neurais profundas com múltiplas camadas.
 *   **Explicação para leigos:** São máquinas que aprendem com grandes volumes de dados e podem reconhecer padrões difíceis, como reconhecer rostos em fotos.
-*   **Aplicação:** Tradução automática, reconhecimento de voz, diagnósticos médicos. A base para a **IA Generativa** e **Grandes Modelos de Linguagem (LLMs)**.
+*   **Aplicação:** Tradução automática, reconhecimento de voz, diagnósticos médicos.
 
 ##### 48. **Deep Q-Networks (DQN)**
 *   **Significado:** Algoritmo de aprendizado por reforço que usa redes neurais profundas para aproximar funções de valor. É um exemplo de algoritmo **Value-Based (RL)**.
@@ -448,9 +448,9 @@
 *   **Aplicação:** Geração de *embeddings* de palavras para tarefas de PLN que se beneficiam de uma compreensão global das relações semânticas, como analogias ou recuperação de informação.
 
 ##### 89. **Gradiente | Gradient**
-*   **Significado:** Vetor de derivadas que indica a direção de maior aumento ou redução de uma função. É fundamental em algoritmos como o **Gradiente Descendente** para otimizar os parâmetros de redes neurais.
-*   **Explicação para leigos:** Indica para onde e quanto mudar para melhorar algo.
-*   **Aplicação:** Usado para ajustar pesos em redes neurais.
+*   **Significado:** Vetor de derivadas que indica a direção de maior aumento ou redução de uma função. Em Machine Learning, refere-se à **inclinação da função de perda em relação aos pesos do modelo, indicando a direção para minimizar o erro**.
+*   **Explicação para leigos:** Indica para onde e quanto mudar para melhorar algo. É como um "mapa" que a IA usa para saber em qual direção e o quão intensamente deve ajustar suas "conexões" para reduzir os erros.
+*   **Aplicação:** Usado para ajustar pesos em redes neurais. O XGBoost utiliza gradientes da função de perda para determinar o que a nova árvore deve aprender.
 
 ##### 90. **Gradiente Descendente (GD) | Gradient Descent**
 *   **Significado:** Método para minimizar funções ajustando parâmetros na direção do gradiente negativo.
@@ -512,10 +512,10 @@
 *   **Explicação para leigos:** Quando a IA usa o que aprendeu para responder perguntas novas.
 *   **Aplicação:** Classificar se um *e-mail* é *spam*. Usado em sistemas de tradução automática e reconhecimento de fala.
 
-##### 102. **Inicialização de Pesos | Weight Initialization**
-*   **Significado:** Definir valores iniciais dos parâmetros de uma rede neural.
-*   **Explicação para leigos:** Começar o aprendizado da IA com “chutes iniciais”.
-*   **Aplicação:** Ajuda a aprender mais rápido e evita problemas no treinamento de redes.
+##### 102. **Machine Learning (Aprendizado de Máquina) | Machine Learning**
+*   **Significado:** Um subcampo da inteligência artificial que permite que os sistemas aprendam com os dados, identifiquem padrões e tomem decisões com o mínimo de intervenção humana.
+*   **Explicação para leigos:** Ensinar computadores a fazer previsões ou reconhecer coisas sozinhos.
+*   **Aplicação:** Controle de *spam*, previsão de vendas, diagnósticos médicos.
 
 ##### 103. **Insight**
 *   **Significado:** Descoberta relevante obtida através da análise de dados.
@@ -1207,4 +1207,74 @@
 *   **Explicação para leigos:** É a arte de criar gráficos e imagens a partir de muitos dados para que as pessoas possam entender facilmente o que a inteligência artificial está fazendo e o que ela aprendeu. Isso ajuda a transformar números e informações complexas em algo fácil de visualizar.
 *   **Aplicação:** Exploração de dados antes do treinamento, avaliação do desempenho do modelo, monitoramento de sistemas de IA em produção, e comunicação de *insights* para *stakeholders* e equipes de negócios.
 
----
+Com certeza! Abaixo está o conteúdo do glossário atualizado, incorporando os novos termos e detalhes da fonte "L04: Completo - Machine Learning Concepts 1 - Regression", mantendo o padrão do glossário original.
+
+##### 243. **Árvore de Decisão | Decision Tree**
+*   **Significado:** Um algoritmo de ML que cria um modelo de predição em forma de árvore, onde cada nó interno representa um "teste" em um atributo, cada ramo representa o resultado do teste e cada nó folha representa o valor alvo. Para regressão, **divide os dados em regiões com previsões constantes**.
+*   **Explicação para leigos:** É como um "mapa de decisões" que, a cada pergunta sobre uma característica dos dados, direciona para uma ramificação até chegar a uma resposta final. Pense em um jogo de "Acerte o Personagem".
+*   **Prós (para regressão):** **Lida com não linearidade, não precisa de escalonamento**.
+*   **Contras (para regressão):** **Propenso a *overfitting*, instável** (pequenas mudanças nos dados podem gerar árvores muito diferentes).
+
+##### 244. **Árvores de Decisão para Regressão (Decision Trees for Regression)**
+*   **Significado:** Uma técnica de regressão que **divide os dados em regiões com previsões constantes**, utilizando uma estrutura de árvore com nós raiz, internos e folha para prever valores contínuos.
+*   **Explicação para leigos:** É como um diagrama de fluxo que, a cada pergunta sobre uma característica dos dados (como o tamanho de uma casa), direciona para uma resposta de preço. A IA usa essas perguntas simples para chegar a uma estimativa final.
+*   **Aplicação:** Usada para prever valores contínuos (como preços de imóveis), pois **lida com não linearidade** e pode gerar regras interpretáveis. No entanto, é **propensa a *overfitting*** e pode ser instável.
+
+##### 245. **Clustering**
+*   **Significado:** Uma técnica de aprendizado não supervisionado que **agrupa dados em clusters com base em similaridades**. É uma das categorias principais da Aprendizagem Não Supervisionada.
+*   **Explicação para leigos:** A máquina descobre grupos em dados (como grupos de clientes com comportamentos parecidos) sem que ninguém precise dizer o que está certo ou errado.
+*   **Aplicação:** Segmentação de clientes, agrupamento de notícias por assunto, ou detecção de anomalias.
+
+##### 246. **Ensemble Prediction (Previsão por Conjunto)**
+*   **Significado:** O processo de **combinar as previsões de múltiplos modelos de aprendizado de máquina** para obter uma previsão mais robusta e precisa.
+*   **Explicação para leigos:** É como pedir a opinião de vários especialistas e combinar suas respostas para ter uma previsão final mais confiável e com menor chance de erro.
+*   **Aplicação:** Usado em algoritmos como o XGBoost para **combinar as saídas de todas as árvores com votação ponderada**, resultando em uma previsão final mais acurada.
+
+##### 247. **Regras de Associação (Association Rules)**
+*   **Significado:** No Aprendizado Não Supervisionado, é uma categoria que **encontra regras/relacionamentos entre variáveis** em grandes conjuntos de dados.
+*   **Explicação para leigos:** A inteligência artificial descobre padrões do tipo "se uma coisa acontece, outra provavelmente também acontece" nos dados, como "se alguém compra pão, provavelmente compra manteiga".
+*   **Aplicação:** Usado para identificar relações em análise de cesta de compras, sistemas de recomendação ou identificação de sequências de eventos.
+
+##### 248. **XGBoost (Extreme Gradient Boosting)**
+*   **Significado:** Um algoritmo de aprendizado de máquina popular e eficiente baseado em árvores de decisão impulsionadas por gradiente, conhecido por seu alto desempenho e flexibilidade. O **XGBoost constrói muitas árvores de decisão "fracas" sequencialmente, onde cada nova árvore aprende a corrigir os erros de todas as árvores anteriores combinadas**.
+*   **Explicação para leigos:** É como ter uma equipe de muitos "consultores" (árvores de decisão). O primeiro faz sua previsão, o segundo tenta corrigir os erros do primeiro, o terceiro corrige os erros dos dois anteriores, e assim por diante. A previsão final é uma combinação das opiniões de todos, tornando-a muito mais precisa.
+*   **Vantagens Principais:** **Alto desempenho (frequentemente vence competições de ML), lida com dados ausentes (tratamento embutido), regularização (previne *overfitting* via L1/L2), importância da característica (calcula automaticamente quais características importam mais), flexível (funciona para classificação, regressão e ranking)**.
+*   **Contras:** Possui mais parâmetros para ajustar, e pode ser propenso a *overfitting* se não for cuidadosamente configurado.
+
+##### 249. **XGBoost Regressor**
+*   **Significado:** Um algoritmo de aprendizado de máquina, popular e eficiente, que **constrói muitas árvores de decisão "fracas" sequencialmente, onde cada nova árvore aprende a corrigir os erros de todas as árvores anteriores combinadas**, focado em problemas de regressão (previsão de valores contínuos).
+*   **Explicação para leigos:** Pense como um time de especialistas, onde cada novo especialista tenta corrigir os erros dos anteriores. Juntos, eles chegam a uma previsão muito precisa, especialmente para valores numéricos.
+*   **Aplicação:** Demonstra **excelente desempenho** em competições de machine learning, **lida com dados ausentes** de forma embutida, utiliza **regularização** (L1/L2) para prevenir *overfitting*, calcula automaticamente a importância das características e é flexível para problemas de regressão.
+
+##### 250. **Regressão | Regression**
+*   **Significado:** Um método estatístico usado para **entender as relações entre variáveis**. É uma tarefa de aprendizado supervisionado que **prediz um valor de saída contínuo (numérico)** com base nas variáveis de entrada.
+*   **Explicação para leigos:** É o estudo de dados para prever um valor numérico futuro, como preços ou temperaturas.
+*   **Função:** Ajuda a entender como as mudanças nas entradas afetam as saídas e a quantificar as relações entre as variáveis.
+
+##### 251. **Regressão Linear | Linear Regression**
+*   **Significado:** Um método simples e interpretável para **modelar a relação linear entre uma variável dependente e uma ou mais variáveis independentes**.
+*   **Explicação para leigos:** É uma IA que tenta encontrar uma linha reta que melhor se encaixa nos seus dados para fazer previsões, como prever o preço de uma casa com base no seu tamanho.
+*   **Prós:** Simples, interpretável, rápida.
+*   **Contras:** **Assume linearidade**, sensível a *outliers* (valores muito fora do padrão).
+
+##### 252. **Regressão Polinomial | Polynomial Regression**
+*   **Significado:** Uma extensão da regressão linear que pode **capturar curvas e padrões não lineares** usando funções polinomiais de variáveis independentes. Permite qualquer grau de regressão polinomial.
+*   **Explicação para leigos:** É como a Regressão Linear, mas em vez de apenas linhas retas, ela consegue se ajustar a curvas e formas mais complexas nos dados para fazer previsões.
+*   **Atenção/Risco:** Graus polinomiais mais altos podem levar a *overfitting* (ajuste excessivo ao ruído dos dados de treinamento).
+
+##### 253. **R² (R-Quadrado) - Coeficiente de Determinação | R² (R-Squared) - Coefficient of Determination**
+*   **Significado:** Uma métrica estatística que **mede o quão bem o modelo de regressão explica a variação na variável alvo**, representando a proporção da variância na variável dependente que pode ser explicada pelas variáveis independentes.
+*   **Fórmula:** R² = 1 - (SS_res / SS_tot).
+*   **Intervalo:** **Varia de 0 a 1** (pode ser negativo para modelos muito ruins).
+*   **Significado:** Indica a "**Porcentagem da variância da variável alvo que seu modelo captura**". Por exemplo, um R² de 0.965 sugere que o modelo explica 96.5% da variância.
+
+##### 254. **RMSE (Root Mean Squared Error) - Erro Quadrático Médio da Raiz | RMSE (Root Mean Squared Error)**
+*   **Significado:** Uma métrica de avaliação da regressão que **mede a magnitude média dos erros de previsão nas mesmas unidades que a variável alvo**. É a raiz quadrada da média dos erros quadráticos.
+*   **Fórmula:** √(1/n x Σ(y_actual - y_predicted)²).
+*   **Intervalo:** **Varia de 0 ao infinito** (quanto menor, melhor).
+*   **Unidades:** Expressa-se nas mesmas unidades da variável alvo (e.g., dólares, metros, anos).
+
+##### 255. **MSE (Mean Squared Error) - Erro Quadrático Médio | MSE (Mean Squared Error)**
+*   **Significado:** Uma métrica que mede a média dos quadrados dos erros (a diferença entre os valores previstos e os valores reais). É **usado em Árvores de Decisão para regressão para determinar as divisões** dos dados.
+*   **Explicação para leigos:** É uma forma de calcular o "tamanho" médio dos erros de uma IA, penalizando erros maiores de forma mais severa. Nas árvores de decisão, ajuda a decidir qual a melhor forma de dividir os dados para tornar as previsões mais precisas.
+*   **Indicador de Qualidade:** O MSE diminui ao longo da árvore de decisão (refletindo melhor homogeneidade nos grupos de dados).
