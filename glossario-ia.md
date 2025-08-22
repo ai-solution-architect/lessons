@@ -1207,8 +1207,6 @@
 *   **Explicação para leigos:** É a arte de criar gráficos e imagens a partir de muitos dados para que as pessoas possam entender facilmente o que a inteligência artificial está fazendo e o que ela aprendeu. Isso ajuda a transformar números e informações complexas em algo fácil de visualizar.
 *   **Aplicação:** Exploração de dados antes do treinamento, avaliação do desempenho do modelo, monitoramento de sistemas de IA em produção, e comunicação de *insights* para *stakeholders* e equipes de negócios.
 
-Com certeza! Abaixo está o conteúdo do glossário atualizado, incorporando os novos termos e detalhes da fonte "L04: Completo - Machine Learning Concepts 1 - Regression", mantendo o padrão do glossário original.
-
 ##### 243. **Árvore de Decisão | Decision Tree**
 *   **Significado:** Um algoritmo de ML que cria um modelo de predição em forma de árvore, onde cada nó interno representa um "teste" em um atributo, cada ramo representa o resultado do teste e cada nó folha representa o valor alvo. Para regressão, **divide os dados em regiões com previsões constantes**.
 *   **Explicação para leigos:** É como um "mapa de decisões" que, a cada pergunta sobre uma característica dos dados, direciona para uma ramificação até chegar a uma resposta final. Pense em um jogo de "Acerte o Personagem".
