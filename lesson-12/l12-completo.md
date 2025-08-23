@@ -295,7 +295,6 @@ Os "personagens" mencionados nas fontes são principalmente entidades e conceito
 8.  **Stakeholders**
     *   **Bio:** Audiência genérica mencionada em "Data Visualization in AI" para quem insights acionáveis são gerados a partir de dados complexos, e entre quem as bibliotecas de visualização buscam efetivamente fazer a ponte entre equipes técnicas e de negócios.
 
-Esta análise detalhada reflete o conteúdo dos slides fornecidos.
 
 ---
 
