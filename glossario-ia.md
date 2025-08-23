@@ -788,9 +788,9 @@
 *   **Aplicação:** Ajustar hiperparâmetros de modelos de IA em experimentos.
 
 ##### 157. **Recompensa (R) | Reward (R)**
-*   **Significado:** Sinal que indica ao agente de IA o quão boa foi uma ação tomada. No aprendizado por reforço, o agente aprende a tomar ações para maximizar as recompensas cumulativas.
-*   **Explicação para leigos:** Os “pontos” que a IA ganha ou perde conforme suas decisões.
-*   **Aplicação:** Jogar xadrez ou videogames, onde ganhar pontos é o objetivo.
+*   **Significado:** Um sinal de feedback escalar do ambiente que indica **quão boa ou ruim foi uma ação tomada em um determinado estado**. O objetivo do agente é **maximizar a recompensa cumulativa** ao longo do tempo.
+*   **Explicação para leigos:** Os “pontos” que a IA ganha ou perde conforme suas decisões, mostrando se ela fez algo certo ou errado em uma situação específica.
+*   **Aplicação:** Jogar xadrez ou videogames, onde ganhar pontos é o objetivo, ou guiar um robô para alcançar uma meta de forma eficiente.
 
 ##### 158. **Redes Convolucionais (CNNs) | Convolutional Neural Networks (CNNs)**
 *   **Significado:** Uma classe de redes neurais profundas projetadas especificamente para processar dados semelhantes a pixel, como imagens. Elas são a espinha dorsal da maioria das aplicações de **Visão Computacional (CV)**, utilizando operações de **Convolução** onde um **filtro (*kernel*)** desliza sobre a imagem de entrada para produzir mapas de características, detectando padrões locais como bordas, texturas ou formas. O *pooling* é usado para reduzir a dimensionalidade.
@@ -1336,5 +1336,27 @@
 *   **Significado:** Alocar mais recursos computacionais **durante a inferência para melhorar a qualidade do raciocínio** em LLMs.
 *   **Explicação para leigos:** É como dar mais tempo e "poder de processamento" para a IA pensar melhor e dar uma resposta mais inteligente na hora em que você faz uma pergunta, mesmo que ela já esteja "treinada".
 *   **Aplicação:** Usado para melhorar o desempenho de LLMs em tempo de execução através de técnicas como Chain-of-Thought, Self-Consistency e GPRO.
+
+##### 268. **Peso (m) | Weight (m)**
+*   **Significado:** O **coeficiente da variável de entrada** em uma equação linear básica (y = mx + b). Ele determina a inclinação da linha e é **ajustado durante o aprendizado** para encontrar os pesos ideais que mapeiam as entradas para as saídas.
+*   **Explicação para leigos:** Pense nele como a "força" ou a "importância" de cada informação de entrada. Quanto maior o peso, mais aquela informação influencia o resultado final, como em uma balança.
+*   **Aplicação:** Fundamental para o aprendizado de algoritmos de **Deep Learning** e **Machine Learning** em geral, definindo como as entradas contribuem para as previsões.
+
+##### 269. **Bias (b) | Bias (b)**
+*   **Significado:** Um **termo constante** em uma equação linear básica (y = mx + b) que representa o valor da variável dependente (y) quando a variável independente (x) é zero. Ele permite que a linha seja deslocada para cima ou para baixo no eixo y, **proporcionando flexibilidade ao modelo**.
+*   **Explicação para leigos:** É como um "ponto de partida" fixo. Mesmo que todas as suas entradas sejam zero, o Bias dá um valor inicial para a sua previsão, permitindo que a IA se ajuste a situações onde a linha não passa pela origem.
+*   **Aplicação:** Essencial para que modelos de **Deep Learning** e **Machine Learning** consigam se ajustar a dados que não começam do zero, como prever o preço de uma casa mesmo sem considerar nenhum feature específico.
+
+##### 270. **Backward Pass (Passagem Reversa) | Backward Pass**
+*   **Significado:** A fase do ciclo de treinamento de uma rede neural onde o valor da perda (L) é usado para **calcular gradientes** (via retropropagação), indicando a direção e magnitude para ajustar os pesos e biases do modelo.
+*   **Explicação para leigos:** É como a IA "voltando atrás" em seus cálculos para entender onde errou e o quanto precisa ajustar cada uma de suas "conexões" (pesos e biases) para errar menos na próxima vez.
+*   **Aplicação:** Componente crucial no **treinamento de redes neurais**, pois permite que o modelo aprenda e minimize seu erro ajustando seus parâmetros.
+
+##### 271. **Policy-Based (RL) | Policy-Based (RL)**
+*   **Significado:** Uma abordagem do **Reinforcement Learning** onde o agente **aprende diretamente a função de política**, ou seja, a estratégia que mapeia estados para ações, sem modelar explicitamente as funções de valor.
+*   **Explicação para leigos:** Em vez de tentar prever "quão boa" cada ação é (como em Value-Based), a IA simplesmente aprende a tomar a "melhor" ação diretamente para cada situação. É como aprender a andar de bicicleta sem calcular a física envolvida.
+*   **Aplicação:** **Melhor para espaços de ação contínuos** (como controlar um braço robótico) e políticas estocásticas (onde a ação pode ter uma certa aleatoriedade), com exemplos incluindo REINFORCE e Proximal Policy Optimization (PPO).
+
+
 
 ---
