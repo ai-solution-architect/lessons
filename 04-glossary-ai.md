@@ -1,9 +1,3 @@
-Compreendo sua necessidade de que os termos sejam numerados sequencialmente a partir do 301, seguindo a mesma estrutura de Markdown para que possa integrá-los aos seus glossários.
-
-Os termos a seguir foram identificados no "L10: Storytelling - IA Generativa, Prompts e Agentes Inteligentes" e não estavam presentes como entradas numeradas nos glossários anteriores (01, 02, 03).
-
-Aqui estão eles, formatados conforme solicitado:
-
 ##### 301. **Few-shot Learning**
 *   **Significado:** Uma técnica em que um modelo aprende uma nova tarefa com apenas alguns exemplos (*shots*) fornecidos dentro do *prompt*, sem a necessidade de retreinamento.
 *   **Explicação para leigos:** É como mostrar à inteligência artificial apenas alguns exemplos do que você quer que ela faça, e ela aprende a tarefa imediatamente sem precisar de um treinamento longo e complexo.
