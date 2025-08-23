@@ -1357,22 +1357,6 @@
 *   **Explicação para leigos:** Em vez de tentar prever "quão boa" cada ação é (como em Value-Based), a IA simplesmente aprende a tomar a "melhor" ação diretamente para cada situação. É como aprender a andar de bicicleta sem calcular a física envolvida.
 *   **Aplicação:** **Melhor para espaços de ação contínuos** (como controlar um braço robótico) e políticas estocásticas (onde a ação pode ter uma certa aleatoriedade), com exemplos incluindo REINFORCE e Proximal Policy Optimization (PPO).
 
-
-
----
-
-Com certeza! Para atualizar o glossário, vou adicionar os novos termos técnicos encontrados na fonte "L08: Completo - Deep Learning: NLP, Visão Computacional e Séries Temporais" aos glossários existentes, mantendo o padrão e a numeração sequencial.
-
-Os termos já existentes nos glossários foram analisados e suas definições enriquecidas com informações adicionais da fonte L08 quando apropriado. Os novos termos serão adicionados a partir do número 272.
-
-Aqui estão os novos termos adicionados e as definições enriquecidas:
-
----
-
-### **Atualizações e Novos Termos no Glossário Essencial de IA, ML e IA Generativa**
-
-**##### 2 - Glossário Essencial de IA, ML e IA Generativa (Continuação)**
-
 **##### 272. NLU (Natural Language Understanding) | Natural Language Understanding**
 *   ****Significado:**** Um subcampo do Processamento de Linguagem Natural (PLN) que se concentra em **permitir que os computadores compreendam a linguagem humana de maneira significativa**. Envolve capacitar máquinas para **compreender texto e fala**, e responder em linguagem natural.
 *   ****Explicação para leigos:**** É a parte da IA que faz o computador entender o que você diz ou escreve, interpretando o significado por trás das palavras, como entender uma pergunta feita em português.
