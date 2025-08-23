@@ -3,7 +3,7 @@
 ##### 1. **1D CNN para Séries Temporais | 1D CNN for Time Series**
 *   **Significado:** Uma aplicação de Redes Neurais Convolucionais (CNNs) onde filtros convolucionais unidimensionais são usados para detectar padrões locais em sequências de séries temporais, e o *pooling* é usado para reduzir a dimensionalidade. O *Deep Learning* revolucionou a análise de séries temporais, permitindo que modelos como 1D CNNs capturem dependências temporais complexas.
 *   **Explicação para leigos:** Pense nisso como uma "lupa inteligente" que desliza sobre os dados de tempo (como uma sequência de preços de ações) para encontrar pequenos padrões importantes, tornando os dados menores e mais fáceis de analisar. É uma técnica de "cérebro" artificial que se especializa em encontrar padrões em dados que mudam ao longo do tempo.
-*   **Aplicação:** Bom para reconhecimento de padrões em sequências de séries temporais. Utilizado na previsão de valores futuros e na análise de dados complexos que variam com o tempo.
+*   **Aplicação:** Bom para reconhecimento de padrões em sequências de séries temporais. É utilizado na previsão de valores futuros e na análise de dados complexos que variam com o tempo.
 
 ##### 2. **Ação (A) | Action**
 *   **Significado:** Um movimento ou decisão tomada por um agente em um ambiente.
@@ -1357,147 +1357,147 @@
 *   **Explicação para leigos:** Em vez de tentar prever "quão boa" cada ação é (como em Value-Based), a IA simplesmente aprende a tomar a "melhor" ação diretamente para cada situação. É como aprender a andar de bicicleta sem calcular a física envolvida.
 *   **Aplicação:** **Melhor para espaços de ação contínuos** (como controlar um braço robótico) e políticas estocásticas (onde a ação pode ter uma certa aleatoriedade), com exemplos incluindo REINFORCE e Proximal Policy Optimization (PPO).
 
-**##### 272. NLU (Natural Language Understanding) | Natural Language Understanding**
+##### 272. **NLU (Natural Language Understanding) | Natural Language Understanding**
 *   ****Significado:**** Um subcampo do Processamento de Linguagem Natural (PLN) que se concentra em **permitir que os computadores compreendam a linguagem humana de maneira significativa**. Envolve capacitar máquinas para **compreender texto e fala**, e responder em linguagem natural.
 *   ****Explicação para leigos:**** É a parte da IA que faz o computador entender o que você diz ou escreve, interpretando o significado por trás das palavras, como entender uma pergunta feita em português.
 *   ****Aplicação:**** Fundamental para o funcionamento de assistentes virtuais, sistemas de resposta a perguntas e qualquer sistema que precise de uma compreensão profunda da comunicação humana.
 
-**##### 273. NLP Pipeline | NLP Pipeline**
+##### 273. **NLP Pipeline | NLP Pipeline**
 *   ****Significado:**** Um **processo sequencial para transformar texto bruto em representações utilizáveis por modelos de Machine Learning**. É a estrutura que guia o fluxo de trabalho desde a coleta de dados até a implantação de um modelo de Processamento de Linguagem Natural.
 *   ****Explicação para leigos:**** Pense em uma "linha de montagem" para textos. Primeiro, o texto é coletado, depois limpo e organizado, transformado em números que a IA entende, treinado em um modelo, avaliado e, finalmente, colocado para uso.
 *   ****Aplicação:**** Usado na construção de qualquer sistema de PLN, como na criação de um classificador de e-mails, um tradutor automático ou um chatbot.
 
-**##### 274. Input Gate (I) | Input Gate (I)**
+##### 274. **Input Gate (I) | Input Gate (I)**
 *   ****Significado:**** Um componente em células Long Short-Term Memory (LSTM) que **controla qual nova informação deve ser armazenada no estado da célula**. Ele decide quais valores da entrada serão usados para atualizar a memória da rede.
 *   ****Explicação para leigos:**** É como uma "porta" na memória da IA que decide qual informação nova que está chegando é importante o suficiente para ser guardada, filtrando o que é relevante.
 *   ****Aplicação:**** Essencial para as LSTMs aprenderem novas dependências e atualizarem seu conhecimento sobre a sequência de dados, permitindo que a rede retenha informações cruciais.
 
-**##### 275. Output Gate (O) | Output Gate (O)**
+##### 275. **Output Gate (O) | Output Gate (O)**
 *   ****Significado:**** Um componente em células Long Short-Term Memory (LSTM) que **determina qual parte do estado da célula será a saída** como o estado oculto (Hidden State). Ele decide o que é relevante da memória para ser passado adiante para a próxima camada ou para a previsão final.
 *   ****Explicação para leigos:**** É a "porta de saída" da memória da IA, que seleciona qual informação guardada é a mais importante para ser mostrada ou usada na próxima etapa do processamento.
 *   ****Aplicação:**** Permite que as LSTMs controlem a informação que é exposta e usada para fazer previsões, focando no que é mais relevante do contexto acumulado.
 
-**##### 276. Reset Gate (R) | Reset Gate (R)**
+##### 276. **Reset Gate (R) | Reset Gate (R)**
 *   ****Significado:**** Um componente nas Gated Recurrent Units (GRUs) que **determina quanta informação passada do estado oculto deve ser esquecida**. Ele decide o quão relevante o passado é para o cálculo do estado oculto atual.
 *   ****Explicação para leigos:**** É como um "botão de reiniciar" na memória da IA que, para cada nova informação, decide se deve "apagar" ou diminuir a importância de lembranças antigas, se elas não forem mais úteis.
 *   ****Aplicação:**** Ajuda as GRUs a serem mais flexíveis e a se adaptarem a novas informações em sequências, permitindo que ignorem o contexto irrelevante e foquem no que é atual.
 
-**##### 277. Update Gate (Z) | Update Gate (Z)**
+##### 277. **Update Gate (Z) | Update Gate (Z)**
 *   ****Significado:**** Um componente nas Gated Recurrent Units (GRUs) que **decide quanto do estado oculto passado manter e quanta informação nova adicionar**. Ele atua como um mecanismo combinado das portas de esquecimento e entrada de uma LSTM.
 *   ****Explicação para leigos:**** É a "porta principal" da GRU que gerencia o fluxo da memória, decidindo uma parte do que deve ser lembrado do passado e quanto de novidade deve ser incorporado na memória atual da IA.
 *   ****Aplicação:**** Fundamental para as GRUs aprenderem e atualizarem seu estado de memória de forma eficiente, controlando a retenção de informações de longo prazo e a integração de dados novos.
 
-**##### 278. Candidate State (Rl) | Candidate State (Rl)**
+##### 278. **Candidate State (Rl) | Candidate State (Rl)**
 *   ****Significado:**** Um termo usado na arquitetura Gated Recurrent Unit (GRU) que **propõe uma nova ativação baseada no input atual e reseta seletivamente a informação passada**. É uma etapa intermediária no cálculo do estado oculto final.
 *   ****Explicação para leigos:**** É como um "rascunho" de nova informação que a IA cria. Ela pega a informação mais recente e o que sobrou da memória antiga (depois que o reset gate agiu) para formar uma possível nova memória.
 *   ****Aplicação:**** Ajuda a GRU a processar e integrar as informações atuais com o contexto relevante do passado, contribuindo para a eficiência do aprendizado em sequências.
 
-**##### 279. CV Pipeline | CV Pipeline**
+##### 279. **CV Pipeline | CV Pipeline**
 *   ****Significado:**** Uma estrutura organizada de etapas para **processar e analisar imagens em aplicações de Visão Computacional**. Começa com a aquisição da imagem e termina com a implantação e otimização do modelo.
 *   ****Explicação para leigos:**** É como uma linha de produção para fotos ou vídeos. As imagens são coletadas, preparadas, os detalhes importantes são extraídos, um modelo de IA é treinado com elas e, finalmente, o sistema é colocado para funcionar e monitorado.
 *   ****Aplicação:**** Essencial para o desenvolvimento de sistemas de Visão Computacional, como em carros autônomos, reconhecimento facial ou análise de imagens médicas.
 
-**##### 280. Data Augmentation (Aumento de Dados) | Data Augmentation**
+##### 280. **Data Augmentation (Aumento de Dados) | Data Augmentation**
 *   ****Significado:**** Uma técnica de pré-processamento de dados que **cria novas imagens de treinamento a partir das existentes**. Isso é feito aplicando transformações (como rotação, espelhamento, corte ou ajuste de brilho) para aumentar a quantidade e a diversidade do conjunto de dados, prevenindo o *overfitting*.
 *   ****Explicação para leigos:**** É como ter uma foto de um gato e, a partir dela, criar várias fotos novas (virada, um pouco mais escura, cortada diferente) para que a IA aprenda a reconhecer o gato em diversas situações e não "decore" apenas a foto original.
 *   ****Aplicação:**** Amplamente usada na Visão Computacional para **melhorar a robustez e generalização de modelos de classificação e detecção de imagens**, especialmente quando há poucos dados de treinamento.
 
-**##### 281. Edge Detection | Edge Detection**
+##### 281. **Edge Detection | Edge Detection**
 *   ****Significado:**** Uma técnica de processamento de imagem que **identifica e realça as bordas e contornos dos objetos em uma imagem**. É um padrão local que pode ser detectado por filtros convolucionais em Redes Neurais Convolucionais (CNNs).
 *   ****Explicação para leigos:**** É como um programa que desenha o "esqueleto" de uma imagem, transformando todas as cores em linhas que marcam os limites dos objetos. Isso ajuda a IA a identificar as formas.
 *   ****Aplicação:**** Fundamental na Visão Computacional para pré-processamento de imagens, reconhecimento de padrões, detecção de objetos e outras tarefas onde a forma e o contorno são importantes.
 
-**##### 282. CNN Pipeline Completa | Complete CNN Pipeline**
+##### 282. **CNN Pipeline Completa | Complete CNN Pipeline**
 *   ****Significado:**** Refere-se ao **fluxo de dados completo de uma imagem de entrada através de todas as camadas de uma Rede Neural Convolucional (CNN)**. Isso inclui camadas convolucionais, Max Pooling, Flatten e camadas totalmente conectadas, culminando em previsões de saída.
 *   ****Explicação para leigos:**** É o "caminho completo" que uma foto percorre dentro de um "cérebro" artificial. Ela entra, passa por vários filtros para achar padrões, é simplificada, e então as informações são combinadas para dar uma resposta final, como identificar o que tem na foto.
 *   ****Aplicação:**** A estrutura base para construir e treinar modelos de Visão Computacional para tarefas como classificação de imagens ou detecção de objetos, mostrando como os dados são processados e transformados.
 
-**##### 283. Cyclical (Cíclico) | Cyclical**
+##### 283. **Cyclical (Cíclico) | Cyclical**
 *   ****Significado:**** Um componente fundamental de uma série temporal que representa **flutuações irregulares e de longo prazo**. Diferente da sazonalidade, os ciclos não têm um período fixo ou previsível.
 *   ****Explicação para leigos:**** São como altos e baixos nos dados que acontecem ao longo de um tempo bem mais longo e sem um padrão tão certinho quanto as estações do ano, tipo os "altos e baixos" da economia.
 *   ****Aplicação:**** Identificar e analisar padrões de longo prazo em séries temporais, como ciclos econômicos, ciclos de negócios ou tendências de mercado de vários anos, ajudando na previsão e planejamento estratégico.
 
-**##### 284. CNN-LSTM Hybrid | CNN-LSTM Hybrid**
+##### 284. **CNN-LSTM Hybrid | CNN-LSTM Hybrid**
 *   ****Significado:**** Uma arquitetura de Deep Learning que **combina os benefícios das Redes Neurais Convolucionais (CNNs) e das Long Short-Term Memory (LSTMs)**. A CNN é usada para extrair características locais dos dados, e a LSTM modela as dependências temporais na sequência dessas características.
 *   ****Explicação para leigos:**** É uma equipe de IA onde um especialista (CNN) é bom em encontrar detalhes importantes em cada "pedaço" do dado (como em uma imagem ou em um trecho de série temporal), e outro especialista (LSTM) é bom em lembrar a ordem e o contexto desses detalhes ao longo do tempo.
 *   ****Aplicação:**** Usada em tarefas que requerem a compreensão de padrões espaciais ou locais e também a modelagem de sequências no tempo, como reconhecimento de atividades em vídeos, análise de séries temporais complexas e processamento de linguagem natural.
 
-**##### 285. Attention-Based Models (Modelos Baseados em Atenção) | Attention-Based Models**
+##### 285. **Attention-Based Models (Modelos Baseados em Atenção) | Attention-Based Models**
 *   ****Significado:**** Uma classe de modelos de rede neural que **permitem que a rede foque em partes importantes da sequência de entrada ao processá-la**. Esses modelos, como os Transformers, atribuem "pesos de atenção" para determinar a relevância de diferentes partes da entrada.
 *   ****Explicação para leigos:**** É como se a IA tivesse uma "lupa" inteligente que consegue focar nos pedaços mais importantes de uma frase ou de uma série de dados, em vez de tentar processar tudo igualmente. Isso a ajuda a entender o contexto e a fazer previsões melhores.
 *   ****Aplicação:**** Amplamente utilizados em Processamento de Linguagem Natural (PLN) para tarefas como tradução automática, resposta a perguntas e sumarização, e também em Análise de Séries Temporais para capturar dependências de longo prazo.
 
-**##### 286. Time Series Pipeline | Time Series Pipeline**
+##### 286. **Time Series Pipeline | Time Series Pipeline**
 *   ****Significado:**** Uma sequência estruturada de etapas para **coletar, pré-processar, modelar e implantar dados de séries temporais**. O objetivo é analisar padrões, tendências e fazer previsões sobre valores futuros.
 *   ****Explicação para leigos:**** É um "caminho" organizado que os dados que mudam com o tempo (como vendas mensais ou temperatura diária) percorrem. Eles são coletados, limpos, os detalhes importantes são extraídos, um modelo é treinado e então usado para prever o futuro.
 *   ****Aplicação:**** Essencial para projetos de previsão, como previsão de demanda, preços de ações, clima e monitoramento de desempenho de sistemas, garantindo que os dados sejam preparados e analisados de forma eficaz.
 
-**##### 287. MAPE (Mean Absolute Percentage Error) | MAPE (Mean Absolute Percentage Error)**
+##### 287. **MAPE (Mean Absolute Percentage Error) | MAPE (Mean Absolute Percentage Error)**
 *   ****Significado:**** Uma métrica de avaliação de modelos de regressão que **mede a precisão da previsão como uma porcentagem do valor real**. É útil para avaliar a precisão de previsões em séries temporais.
 *   ****Explicação para leigos:**** É uma forma de dizer o quanto a previsão da IA errou, mas em termos de porcentagem. Por exemplo, se a IA previu que um produto custaria 100 reais e ele custou 110, o erro seria de 10%.
 *   ****Aplicação:**** Usada para avaliar o desempenho de modelos de previsão, especialmente em cenários de negócios onde a interpretabilidade em termos de porcentagem é importante, como em previsões de vendas ou demanda.
 
-**##### 288. Análise de Resíduos (Residual Analysis) | Residual Analysis**
+##### 288. **Análise de Resíduos (Residual Analysis) | Residual Analysis**
 *   ****Significado:**** Uma técnica estatística usada para **avaliar a adequação de um modelo de previsão**. Envolve examinar os resíduos (as diferenças entre os valores observados e os valores previstos pelo modelo) para identificar padrões ou violações das suposições do modelo.
 *   ****Explicação para leigos:**** Depois que a IA faz sua previsão, a Análise de Resíduos é como verificar "o que sobrou de erro". Se esses erros tiverem um padrão, significa que a IA não pegou tudo o que deveria ter aprendido e pode ser melhorada.
 *   ****Aplicação:**** Crucial na validação de modelos de séries temporais e regressão, ajudando a detectar *underfitting* (ajuste insuficiente) ou padrões não capturados pelo modelo, guiando melhorias no design do modelo.
 
-**##### 289. ARIMA (AutoRegressive Integrated Moving Average) | ARIMA (AutoRegressive Integrated Moving Average)**
+##### 289. **ARIMA (AutoRegressive Integrated Moving Average) | ARIMA (AutoRegressive Integrated Moving Average)**
 *   ****Significado:**** Um **modelo estatístico clássico e popular para análise e previsão de séries temporais**. Ele combina componentes autorregressivos (AR), de integração (I) e de média móvel (MA) para capturar diferentes tipos de padrões em dados sequenciais.
 *   ****Explicação para leigos:**** É um método matemático tradicional para prever o futuro com base em dados que mudam com o tempo. Ele olha para o passado recente, para o quanto as coisas mudaram e para os erros anteriores para fazer uma previsão.
 *   ****Aplicação:**** Amplamente usado em previsão financeira, previsão de demanda, análise de mercado e controle de processos, sendo eficaz para séries temporais com padrões lineares e estacionários.
 
-**##### 290. SARIMA (Seasonal AutoRegressive Integrated Moving Average) | SARIMA (Seasonal AutoRegressive Integrated Moving Average)**
+##### 290. **SARIMA (Seasonal AutoRegressive Integrated Moving Average) | SARIMA (Seasonal AutoRegressive Integrated Moving Average)**
 *   ****Significado:**** Uma **extensão do modelo ARIMA que incorpora um componente sazonal**. É projetado para lidar com séries temporais que exibem padrões sazonais regulares, além de tendências e componentes não sazonais.
 *   ****Explicação para leigos:**** É como o ARIMA, mas com um "olho extra" para as coisas que se repetem todo ano, mês ou semana. Por exemplo, se um modelo de vendas precisa prever o aumento nas vendas de Natal todos os anos, o SARIMA consegue lidar com isso.
 *   ****Aplicação:**** Usado para prever séries temporais com forte sazonalidade, como vendas de varejo, consumo de energia e tráfego de redes, onde os padrões se repetem em ciclos fixos.
 
-**##### 291. Bag of Words (Saco de Palavras) | Bag of Words**
+##### 291. **Bag of Words (Saco de Palavras) | Bag of Words**
 *   ****Significado:**** Uma técnica de Engenharia de Features em PLN que **representa um texto como um "saco" (multiconjunto) de suas palavras, desconsiderando a ordem das palavras, mas mantendo a contagem de ocorrências de cada palavra**. O resultado é um vetor numérico que pode ser usado por algoritmos de Machine Learning.
 *   ****Explicação para leigos:**** É como contar quantas vezes cada palavra aparece em um texto, sem se preocupar com a ordem em que elas estão. Por exemplo, "gato preto" e "preto gato" seriam representados da mesma forma, com "gato" uma vez e "preto" uma vez.
 *   ****Aplicação:**** Usada para tarefas como classificação de texto (detecção de spam), análise de sentimento e clustering de documentos, fornecendo uma representação numérica simples para modelos de Machine Learning.
 
-**##### 292. TF-IDF (Term Frequency-Inverse Document Frequency) | TF-IDF (Term Frequency-Inverse Document Frequency)**
+##### 292. **TF-IDF (Term Frequency-Inverse Document Frequency) | TF-IDF (Term Frequency-Inverse Document Frequency)**
 *   ****Significado:**** Uma técnica de Engenharia de Features que **avalia a importância de uma palavra em um documento em relação a um conjunto de documentos (corpus)**. Ela aumenta o peso de palavras que são frequentes em um documento, mas raras no corpus, e diminui o peso de palavras comuns a muitos documentos.
 *   ****Explicação para leigos:**** É como um sistema de pontuação para palavras. Uma palavra ganha mais pontos se ela aparece muito em um texto específico, mas é rara em todos os outros textos. Palavras como "o", "a", "de" perdem pontos porque aparecem em quase todos os textos e não ajudam a identificar um assunto.
 *   ****Aplicação:**** Usado para recuperação de informação (busca), sumarização de texto, classificação de documentos e filtragem de spam, onde é crucial identificar as palavras mais relevantes para o conteúdo de um documento.
 
-**##### 293. Resposta a Perguntas (Question Answering) | Question Answering**
+##### 293. **Resposta a Perguntas (Question Answering) | Question Answering**
 *   ****Significado:**** Uma tarefa de Processamento de Linguagem Natural (PLN) que **extrai respostas precisas de um texto fornecido ou de uma base de conhecimento**. O objetivo é permitir que as IAs respondam a perguntas em linguagem natural.
 *   ****Explicação para leigos:**** É quando a IA consegue ler um texto ou um conjunto de documentos e encontrar a resposta exata para uma pergunta que você faz, como se estivesse consultando um livro e apontando a frase certa.
 *   ****Aplicação:**** Utilizada em assistentes virtuais, *chatbots* de suporte ao cliente, sistemas de busca aprimorados e para automatizar a extração de informações em grandes volumes de texto.
 
-**##### 294. Sumarização de Texto (Text Summarization) | Text Summarization**
+##### 294. **Sumarização de Texto (Text Summarization) | Text Summarization**
 *   ****Significado:**** Uma tarefa de Processamento de Linguagem Natural (PLN) que **gera resumos concisos de textos mais longos**, preservando as informações mais importantes. Pode ser extrativa (selecionando frases do original) ou abstrativa (gerando novas frases).
 *   ****Explicação para leigos:**** É como pedir para a IA ler um artigo longo e escrever um resumo curtinho, mas que ainda conte o essencial, como se fosse um estudante fazendo anotações dos pontos principais.
 *   ****Aplicação:**** Usada para processar grandes volumes de informações rapidamente, em sistemas de notícias, em *chatbots* para resumir conversas longas ou em plataformas para gerar prévias de documentos.
 
-**##### 295. BiLSTM (Bidirectional Long Short-Term Memory) | Bidirectional Long Short-Term Memory**
+##### 295. **BiLSTM (Bidirectional Long Short-Term Memory) | Bidirectional Long Short-Term Memory**
 *   ****Significado:**** Uma variação das Redes Neurais Recorrentes (RNNs) que **processa sequências em duas direções independentes: uma para a frente (do início ao fim) e outra para trás (do fim ao início)**. Isso permite que a rede capture dependências de longo prazo em ambas as direções, obtendo um contexto mais completo para cada ponto da sequência.
 *   ****Explicação para leigos:**** É uma IA com "memória" que lê uma frase não só do começo para o fim, mas também do fim para o começo. Ao fazer isso, ela entende melhor o significado de cada palavra, considerando tudo o que vem antes e tudo o que vem depois.
 *   ****Aplicação:**** Demonstrada para modelagem sequencial, como reconhecimento de fala, tradução automática, análise de sentimento e reconhecimento de entidade nomeada, onde o contexto bidirecional é crucial para o desempenho.
 
-**##### 296. Estimativa de Pose (Pose Estimation) | Pose Estimation**
+##### 296. **Estimativa de Pose (Pose Estimation) | Pose Estimation**
 *   ****Significado:**** Uma tarefa de Visão Computacional (CV) que **identifica e localiza pontos-chave (articulações) do corpo humano em imagens ou vídeos**, desenhando a estrutura esquelética da pessoa.
 *   ****Explicação para leigos:**** É quando o computador consegue ver uma pessoa em uma foto ou vídeo e "desenhar" um boneco de palitos por cima dela, identificando onde estão os cotovelos, joelhos, cabeça, etc..
 *   ****Aplicação:**** Usada em jogos interativos, análise de movimento em esportes, realidade aumentada, segurança (para detectar atividades suspeitas) e para controlar robôs com base em gestos humanos.
 
-**##### 297. Transferência de Estilo Artístico (Artistic Style Transfer) | Artistic Style Transfer**
+##### 297. **Transferência de Estilo Artístico (Artistic Style Transfer) | Artistic Style Transfer**
 *   ****Significado:**** Uma tarefa de Visão Computacional (CV) que **pega o conteúdo de uma imagem e combina com o estilo artístico de outra imagem**, resultando em uma nova imagem que mantém o conteúdo original, mas com a textura e o estilo da segunda imagem.
 *   ****Explicação para leigos:**** É como pedir para a IA pintar uma foto que você tirou (o conteúdo) usando o estilo de um quadro famoso, como o de Van Gogh (o estilo). A foto continua sendo a sua, mas parece que foi pintada pelo artista.
 *   ****Aplicação:**** Criação de arte digital, edição de fotos com efeitos estilizados, personalização de conteúdo visual e em aplicativos de fotografia.
 
-**##### 298. Streaming de Dados (Data Streaming) | Data Streaming**
+##### 298. **Streaming de Dados (Data Streaming) | Data Streaming**
 *   ****Significado:**** O processo de **transmissão contínua de dados que são gerados em tempo real** e processados à medida que chegam, em vez de processar lotes de dados pré-existentes.
 *   ****Explicação para leigos:**** É como um "rio" de informações que nunca para de fluir. Os dados chegam um por um (ou em pequenos pacotes) e são analisados imediatamente, em vez de esperar um monte de dados se juntar para só então começar a olhar para eles.
 *   ****Aplicação:**** Usado em sistemas de previsão em tempo real para séries temporais, monitoramento de desempenho de modelos, detecção de fraudes, análise de dados de sensores IoT e em aplicações que exigem respostas imediatas.
 
-**##### 299. Similaridade de Cosseno (Cosine Similarity) | Cosine Similarity**
+##### 299. **Similaridade de Cosseno (Cosine Similarity) | Cosine Similarity**
 *   ****Significado:**** Uma métrica usada em *embeddings* para **medir a semelhança entre dois vetores não nulos**, calculando o cosseno do ângulo entre eles. Um valor próximo de 1 indica alta similaridade, enquanto um valor próximo de -1 indica baixa similaridade (opostos).
 *   ****Explicação para leigos:**** É como uma "bússola" para comparar o "significado" de duas palavras (representadas como números). Se a bússola aponta na mesma direção para duas palavras, elas são muito parecidas em significado. Se apontam para direções opostas, são muito diferentes.
 *   ****Aplicação:**** Amplamente utilizada em sistemas de recomendação, busca semântica, *clustering* de documentos e análise de sentimento para identificar a proximidade de significado entre palavras, frases ou documentos.
 
-**##### 300. Dependências Temporais (Temporal Dependencies) | Temporal Dependencies**
+##### 300. **Dependências Temporais (Temporal Dependencies) | Temporal Dependencies**
 *   ****Significado:**** Relações entre pontos de dados em uma série temporal que **ocorrem em diferentes momentos, onde o valor atual depende de valores passados**. A capacidade de capturar essas dependências é crucial para modelos de Deep Learning em séries temporais.
 *   ****Explicação para leigos:**** É a ideia de que o que acontece hoje (ou agora) em uma sequência de dados é influenciado pelo que aconteceu no passado. Por exemplo, a temperatura de amanhã depende da temperatura de hoje e dos dias anteriores.
 *   ****Aplicação:**** Fundamental para a modelagem de séries temporais, onde a compreensão de como os eventos passados afetam os eventos futuros é essencial para fazer previsões precisas e entender o comportamento de sistemas dinâmicos.
