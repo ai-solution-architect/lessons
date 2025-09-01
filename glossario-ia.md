@@ -2342,3 +2342,218 @@ Aqui estão eles, formatados conforme solicitado:
 *   **Significado:** Padrões e diretrizes publicados pelo IEEE (Instituto de Engenheiros Eletricistas e Eletrônicos) que orientam o *design* ético de sistemas de inteligência artificial, cobrindo aspectos como transparência, privacidade e vieses.
 *   **Explicação para leigos:** São normas criadas por uma organização de engenheiros (IEEE) para ajudar a projetar IAs que sejam éticas, pensando na transparência, na privacidade e em evitar preconceitos desde o início.
 *   **Aplicação:** Padrões da indústria para o *design* ético de IA, influenciando as práticas de engenharia e desenvolvimento.
+
+468. **Bedrock | Bedrock**
+*   **Significado:** Um serviço totalmente gerenciado pela AWS que fornece acesso a **modelos de fundação (FMs)** de diversos provedores (como Amazon, Anthropic Claude, Meta Llama e Stability AI) através de APIs simples. Ele atua como um hub de modelos e inclui recursos como **Knowledge Bases**, **Guardrails** e **Agents** para desenvolvimento de **IA Generativa (GenAI)** e personalização.
+*   **Explicação para leigos:** É como uma "plataforma central" da Amazon onde você pode acessar e usar diversos modelos de inteligência artificial já "prontos e superinteligentes" (como os que geram texto ou imagens), para criar seus próprios aplicativos de IA de forma mais fácil e rápida.
+*   **Aplicação:** Acesso a modelos de fundação e desenvolvimento de **GenAI**. Desenvolvimento de aplicações, personalização com **RAG** e fluxos de trabalho de agentes.
+
+469. **AI Foundry | AI Foundry**
+*   **Significado:** Uma plataforma da Microsoft Azure para construir aplicações de **IA Generativa (GenAI)**, oferecendo acesso a **modelos OpenAI do Azure**, **Prompt flow**, ferramentas de engenharia de prompt e recursos de IA responsável. Permite implantar agentes únicos e orquestrar múltiplos agentes (**multi-agentes**) utilizando ferramentas como **Autogen** e **Semantic Kernel**.
+*   **Explicação para leigos:** É uma "fábrica" de inteligência artificial da Microsoft que te dá acesso a modelos superavançados (como o ChatGPT) e a ferramentas para criar e gerenciar "robôs" de IA que geram conteúdo ou interagem de forma inteligente.
+*   **Aplicação:** Desenvolvimento de **GenAI** com acesso a **modelos OpenAI**. Implantação de agentes únicos e orquestração multi-agente.
+
+470. **Copilot | Copilot**
+*   **Significado:** Um assistente de **IA** integrado a aplicativos do Microsoft 365. Ele fornece interfaces de linguagem natural para auxiliar em tarefas de produtividade e geração de código.
+*   **Explicação para leigos:** É como ter um "colega" de trabalho com inteligência artificial que te ajuda diretamente em programas como Word, Excel ou Outlook, escrevendo textos, resumindo documentos ou até criando códigos.
+*   **Aplicação:** Assistência de **IA** integrada ao Microsoft 365 para tarefas de produtividade e geração de código.
+
+471. **Model Garden | Model Garden**
+*   **Significado:** Um repositório no Google Cloud que oferece modelos pré-treinados e **modelos de fundação (FMs)**, incluindo modelos como **PaLM** e **Gemini**, além de modelos de terceiros, com opções fáceis de implantação.
+*   **Explicação para leigos:** Pense nisso como uma "loja virtual" ou um "catálogo" do Google onde você pode encontrar e usar diversos modelos de inteligência artificial já "prontos e treinados" para os seus projetos, sem precisar construí-los do zero.
+*   **Aplicação:** Fornecer modelos pré-treinados e de fundação para fácil implantação em projetos de **IA** no Google Cloud.
+
+472. **Databricks | Databricks**
+*   **Significado:** Uma empresa que fornece uma plataforma unificada de dados e **IA** baseada em Apache Spark, com ofertas significativas em **MLOps**, **Engenharia de Dados**, **Machine Learning Clássico** e **GenAI**. Inclui ferramentas como MLflow, Mosaic AI Gateway e Unity Catalog.
+*   **Explicação para leigos:** É como uma "central de dados" completa que ajuda as empresas a organizar, limpar e usar grandes volumes de informações para treinar inteligências artificiais e criar novos aplicativos.
+*   **Aplicação:** Rastreamento e registro de modelos (**MLflow**). **MLOps**, **Engenharia de Dados**, **ML Clássico**, **GenAI** e Desenvolvimento Multi-Agente **AI**.
+
+473. **IBM | IBM**
+*   **Significado:** Uma empresa de tecnologia que oferece uma suíte de soluções de **IA** e dados, incluindo watsonx.governance, Watson Studio, watsonx.ai (com modelos Granite) e ferramentas para **GenAI** e desenvolvimento multi-agente.
+*   **Explicação para leigos:** Uma das grandes empresas de tecnologia que oferece diversas ferramentas e serviços para criar, gerenciar e controlar inteligências artificiais, desde a organização de dados até a construção de IAs que geram conteúdo.
+*   **Aplicação:** **Governança** e gerenciamento de risco de modelo (**watsonx.governance**). **MLOps**, **Engenharia de Dados**, **ML Clássico**, **GenAI** e Desenvolvimento Multi-Agente **AI**.
+
+474. **Palantir | Palantir**
+*   **Significado:** Uma empresa de software conhecida por suas plataformas de análise de dados, como Foundry MLOps, AIP (Artificial Intelligence Platform) e ferramentas para integração de **LLM** e desenvolvimento de agentes de **IA**, incluindo **Guardrails** e **Context integrations**.
+*   **Explicação para leigos:** Uma empresa de software que constrói grandes sistemas para analisar dados e integrar inteligências artificiais avançadas, ajudando a gerenciar o uso de IAs em cenários complexos, com foco em segurança e contexto.
+*   **Aplicação:** Integração de **LLM** com Palantir AIP, **Guardrails** e **Context integrations**. **MLOps**, **Engenharia de Dados**, **ML Clássico**, **GenAI** e Desenvolvimento Multi-Agente **AI**.
+
+475. **Prompt flow | Prompt flow**
+*   **Significado:** Uma ferramenta para desenvolvimento de **IA Generativa (GenAI)** no Azure AI Foundry, que auxilia na criação e gestão de **prompts** para **LLMs**.
+*   **Explicação para leigos:** É uma ferramenta no Azure que ajuda a "organizar" as perguntas e comandos que você dá a uma IA que gera texto, para que ela entenda melhor o que você quer e dê respostas mais úteis.
+*   **Aplicação:** Desenvolvimento de **GenAI** no Azure.
+
+476. **Vertex AI Inference APIs | Vertex AI Inference APIs**
+*   **Significado:** Interfaces de programação de aplicativos (APIs) que permitem o uso dos modelos treinados na plataforma Vertex AI do Google Cloud para realizar **inferência** (previsões) em novos dados.
+*   **Explicação para leigos:** São como "portas de comunicação" que permitem que outros programas usem a inteligência artificial do Google para obter respostas rápidas ou fazer previsões a partir de novos dados.
+*   **Aplicação:** Realização de **inferência** com modelos de **IA** no Google Cloud, especialmente para aplicações que precisam integrar os resultados de **ML**.
+
+477. **Gemini | Gemini**
+*   **Significado:** Um **modelo de fundação (FM)** multimodal e altamente capaz desenvolvido pelo Google, disponível no **Model Garden** da Vertex AI.
+*   **Explicação para leigos:** É um dos modelos de inteligência artificial mais avançados e versáteis do Google, que consegue entender e trabalhar com diferentes tipos de informação ao mesmo tempo, como texto, imagens e áudio.
+*   **Aplicação:** Utilizado no Vertex AI para desenvolvimento de **GenAI** e disponível através do **Model Garden**.
+
+478. **Knowledge Bases para Amazon Bedrock | Knowledge Bases for Amazon Bedrock**
+*   **Significado:** Um recurso que permite ao **Amazon Bedrock** acessar informações de **bases de conhecimento** externas, personalizadas com dados do usuário, para enriquecer as respostas dos **modelos de fundação**. Isso é fundamental para a personalização com **RAG** (Retrieval Augmented Generation).
+*   **Explicação para leigos:** É como dar à inteligência artificial do Amazon Bedrock uma "biblioteca" particular e atualizada, cheia de informações específicas, para que ela possa consultar esses "livros" antes de responder, tornando suas respostas mais precisas e detalhadas.
+*   **Aplicação:** Complementa o **Amazon Bedrock** para que a **IA** possa acessar e utilizar informações de dados personalizados, essencial para a personalização de **GenAI** com **RAG**.
+
+479. **Guardrails para Amazon Bedrock | Guardrails for Amazon Bedrock**
+*   **Significado:** Mecanismos de segurança no **Amazon Bedrock** que garantem que os modelos de **IA Generativa** operem dentro de limites seguros e éticos, evitando respostas inadequadas ou prejudiciais. Relaciona-se com a **Governança e Ética em GenAI**.
+*   **Explicação para leigos:** São como "grades de proteção" que você coloca em uma inteligência artificial do Amazon Bedrock. Elas servem para garantir que a IA se comporte de forma segura e dentro das regras, sem gerar respostas ruins, tendenciosas ou perigosas.
+*   **Aplicação:** Garante segurança e conformidade para aplicações desenvolvidas com **Amazon Bedrock**, ajudando a gerenciar riscos de **GenAI**.
+
+480. **Agents para Amazon Bedrock | Agents for Amazon Bedrock**
+*   **Significado:** Um recurso no **Amazon Bedrock** que permite construir agentes de **IA** que podem planejar, raciocinar e executar tarefas, utilizando ferramentas e memória, e interagir com outros sistemas.
+*   **Explicação para leigos:** Permite criar "robôs" de inteligência artificial dentro do Amazon Bedrock que conseguem pensar em um plano, usar diferentes ferramentas (como enviar e-mails ou buscar informações) e realizar tarefas de forma autônoma.
+*   **Aplicação:** Desenvolvimento de sistemas multi-agente na AWS, permitindo que a **IA** execute ações específicas além da geração de texto.
+
+481. **Azure OpenAI Service | Azure OpenAI Service**
+*   **Significado:** Um serviço da Microsoft Azure que fornece acesso aos **modelos de IA** da OpenAI (como GPT-3, GPT-4 e DALL-E) com os recursos de segurança e conformidade da plataforma Azure.
+*   **Explicação para leigos:** É a forma de usar os modelos de inteligência artificial mais avançados e conhecidos (como o ChatGPT e os que criam imagens a partir de texto) diretamente na plataforma da Microsoft Azure, com a segurança e privacidade que a Microsoft oferece.
+*   **Aplicação:** Desenvolvimento de **IA Generativa (GenAI)** no Azure, permitindo o uso de modelos de linguagem e geração de imagens.
+
+482. **AIP Agent Studio | AIP Agent Studio**
+*   **Significado:** Uma ferramenta da Palantir para o desenvolvimento de agentes de **IA**, permitindo a criação e o gerenciamento de sistemas capazes de realizar tarefas complexas.
+*   **Explicação para leigos:** É como um "estúdio de criação" da Palantir para construir "robôs" de inteligência artificial que podem planejar e executar diversas tarefas de forma autônoma.
+*   **Aplicação:** Desenvolvimento de agentes de **IA** na plataforma Palantir para automatização e orquestração de fluxos de trabalho.
+
+483. **Autogen | Autogen**
+*   **Significado:** Um *framework* que facilita a orquestração de múltiplos agentes de **IA** para colaboração e resolução de tarefas complexas, especialmente no contexto do Azure AI Foundry.
+*   **Explicação para leigos:** É uma ferramenta que permite que vários "robôs" de inteligência artificial trabalhem juntos e se coordenem para resolver um problema maior, como se fossem uma equipe.
+*   **Aplicação:** Orquestração multi-agente no Azure AI Foundry, permitindo a colaboração entre diferentes agentes de **IA**.
+
+484. **Semantic Kernel | Semantic Kernel**
+*   **Significado:** Um *framework* de desenvolvimento de software que permite combinar **Grandes Modelos de Linguagem (LLMs)** com código de programação tradicional, facilitando a criação de aplicativos de **IA** complexos e sistemas multi-agente.
+*   **Explicação para leigos:** É uma ferramenta que serve como uma "ponte" entre a inteligência artificial que entende e gera texto e os programas de computador normais. Assim, você pode fazer com que a IA realize tarefas complexas usando as capacidades de programação.
+*   **Aplicação:** Orquestração multi-agente no Azure AI Foundry e construção de aplicações de **IA** que integram **LLMs** com lógica de negócios.
+
+485. **Dialogflow CX | Dialogflow CX**
+*   **Significado:** Um recurso de plataforma conversacional do Google Cloud, projetado para construir assistentes virtuais e *chatbots* avançados com capacidades de diálogo complexas.
+*   **Explicação para leigos:** É uma ferramenta do Google para criar assistentes de conversação (como o Google Assistente ou *chatbots* de empresas) que conseguem entender conversas mais longas e complexas, respondendo de forma mais natural.
+*   **Aplicação:** Desenvolvimento de agentes multi-agente e recursos conversacionais no Google Cloud.
+
+486. **Agent SDK/ADK | Agent SDK/ADK**
+*   **Significado:** Kits de Desenvolvimento de Software (SDKs) para agentes de **IA** no Google Cloud, fornecendo as ferramentas e bibliotecas necessárias para construir e integrar agentes de **IA** na plataforma.
+*   **Explicação para leigos:** São os "kits de ferramentas" que os programadores usam para criar e colocar para funcionar os "robôs" de inteligência artificial na plataforma do Google.
+*   **Aplicação:** Desenvolvimento de agentes multi-agente no Google Cloud.
+
+487. **watsonx.data (lakehouse) | watsonx.data (lakehouse)**
+*   **Significado:** Uma plataforma de lakehouse da IBM. Combina as capacidades de um *data lake* (para armazenamento de dados brutos) e um *data warehouse* (para dados estruturados e otimizados para análise), oferecendo uma solução unificada para **Engenharia de Dados** em contextos de **IA/ML** [Interpretation based on definition].
+*   **Explicação para leigos:** É um grande sistema da IBM que serve como um "depósito de dados" muito versátil, onde você pode guardar tanto informações bagunçadas (brutas) quanto informações bem organizadas, tudo no mesmo lugar, para usar com inteligência artificial.
+*   **Aplicação:** **Engenharia de dados** na IBM, fornecendo infraestrutura para armazenamento e processamento de dados para **IA/ML**.
+
+488. **Ontology modeling | Ontology modeling**
+*   **Significado:** O processo de organizar e representar o conhecimento de um domínio específico, definindo os tipos de entidades, suas propriedades e os relacionamentos entre elas. Isso ajuda a **IA** a entender melhor a estrutura e o significado das informações.
+*   **Explicação para leigos:** É como criar um "mapa do conhecimento" para a inteligência artificial. Você define quem são os "personagens" (entidades), o que eles podem fazer (propriedades) e como se conectam, para que a IA entenda melhor o "mundo" que ela está analisando.
+*   **Aplicação:** **Engenharia de dados** na Palantir Foundry, permitindo que a **IA** modele e compreenda relações complexas em grandes volumes de dados.
+
+489. **Pipeline builder | Pipeline builder**
+*   **Significado:** Uma ferramenta para construção de **pipelines** de dados ou **MLOps**, que permite criar e orquestrar fluxos de trabalho sequenciais para processamento, transformação e análise de dados, ou para o ciclo de vida de **ML**.
+*   **Explicação para leigos:** É como uma ferramenta para "montar uma linha de produção" para os dados da inteligência artificial. Você conecta várias "máquinas" (etapas) que vão processar, limpar e organizar as informações até que elas estejam prontas para a IA usar.
+*   **Aplicação:** **Engenharia de dados** na Palantir Foundry e em outras plataformas de **MLOps**, para automatizar e gerenciar o fluxo de trabalho de dados e modelos.
+
+490. **watsonx.governance | watsonx.governance**
+*   **Significado:** Um serviço da IBM focado na **governança** e no gerenciamento de risco de modelos de **IA**. Ele ajuda a garantir que os sistemas de **IA** sejam confiáveis, éticos e estejam em conformidade com as regulamentações.
+*   **Explicação para leigos:** Uma ferramenta da IBM para "supervisionar" as inteligências artificiais. Ela garante que a IA siga as regras, seja justa, não cause problemas e esteja sempre de acordo com a lei e a ética.
+*   **Aplicação:** **Governança** e **ética** na **GenAI** e gerenciamento de risco de modelo em **MLOps**.
+
+491. **Azure AI Content Safety | Azure AI Content Safety**
+*   **Significado:** Um serviço da Microsoft Azure que oferece detecção de conteúdo prejudicial em texto e imagens gerados por **IA**, projetado para ajudar empresas a criarem experiências *online* mais seguras.
+*   **Explicação para leigos:** É como um "policial" da Microsoft que verifica se o conteúdo (textos, imagens) criado por uma inteligência artificial tem algo que possa ser considerado perigoso, ofensivo ou inadequado, ajudando a manter os ambientes digitais seguros.
+*   **Aplicação:** **Governança** e **ética** na **GenAI**, filtragem de conteúdo prejudicial e moderação de conteúdo em texto e imagem.
+
+492. **Jupyter notebooks | Jupyter notebooks**
+*   **Significado:** Ambientes de desenvolvimento interativos baseados na web que permitem combinar código (como Python), texto explicativo, visualizações e saídas em um único documento. São amplamente utilizados em ciência de dados e aprendizado de máquina.
+*   **Explicação para leigos:** É como um "caderno digital" onde cientistas de dados e programadores podem escrever códigos (por exemplo, para IA), explicar o que estão fazendo com texto, mostrar gráficos e ver os resultados, tudo junto e de forma organizada.
+*   **Aplicação:** Desenvolvimento, experimentação e documentação de modelos de **ML** em plataformas como Amazon SageMaker AI.
+
+493. **AutoPilot | AutoPilot**
+*   **Significado:** Um recurso de construção automatizada de modelos no Amazon SageMaker AI que automatiza partes do processo de criação de modelos de **ML**, como seleção de algoritmos e ajuste de hiperparâmetros.
+*   **Explicação para leigos:** É uma ferramenta da Amazon que funciona como um "piloto automático" para criar modelos de inteligência artificial. Ela cuida de tarefas repetitivas, escolhendo os melhores métodos e ajustando as configurações para você.
+*   **Aplicação:** Construção automatizada de modelos no Amazon SageMaker AI, acelerando o desenvolvimento de **ML**.
+
+494. **Treinamento Distribuído | Distributed Training**
+*   **Significado:** Uma técnica de paralelismo de treinamento que envolve a execução de modelos de **IA** em múltiplos nós ou dispositivos (como GPUs ou máquinas) para acelerar o processo de aprendizado, dividindo a carga computacional.
+*   **Explicação para leigos:** Imagine que você tem uma aula muito difícil para a IA aprender. O treinamento distribuído é como ter vários "professores" (computadores ou GPUs) ensinando a mesma coisa para a IA ao mesmo tempo, fazendo com que ela aprenda muito mais rápido.
+*   **Aplicação:** Acelerar o treinamento de modelos de **deep learning** e **LLMs** em larga escala, especialmente para **modelos de IA massivos**.
+
+495. **Inferência em Tempo Real | Real-time Inference**
+*   **Significado:** O processo de um modelo de **IA** treinado realizar previsões em novos dados **imediatamente após recebê-los**, com baixa latência, exigindo alta disponibilidade e desempenho da infraestrutura.
+*   **Explicação para leigos:** É quando a inteligência artificial dá uma resposta quase que instantaneamente assim que recebe uma pergunta ou um novo dado. Pense em um *chatbot* que responde na hora, ou em um sistema que detecta fraudes no momento em que a transação acontece.
+*   **Aplicação:** Sistemas de recomendação *online*, *chatbots*, detecção de fraudes em tempo real, reconhecimento de fala e outras aplicações que exigem respostas imediatas.
+
+496. **Inferência em Lote | Batch Inference**
+*   **Significado:** O processo de um modelo de **IA** treinado realizar previsões em **grandes volumes de dados de uma vez**, processados em grupos (lotes), geralmente para tarefas que não exigem respostas imediatas.
+*   **Explicação para leigos:** É quando a inteligência artificial processa um monte de perguntas ou dados de uma vez, em vez de uma por uma. É como fazer uma pilha de roupas para lavar na máquina de uma vez, em vez de lavar cada peça separadamente. É eficiente para grandes volumes de dados que não precisam de resposta instantânea.
+*   **Aplicação:** Análise de relatórios diários, processamento de grandes conjuntos de imagens para categorização, pontuação de risco de crédito e outras tarefas que podem ser agendadas.
+
+497. **Resposta Assíncrona Quase em Tempo Real | Near Real-time Asynchronous Response**
+*   **Significado:** Um modo de **inferência** onde as solicitações são processadas de forma assíncrona, ou seja, o sistema não precisa esperar a conclusão para aceitar outra solicitação, com as respostas sendo entregues quase que imediatamente após o processamento, sem a necessidade de uma conexão contínua.
+*   **Explicação para leigos:** A inteligência artificial recebe sua pergunta e começa a pensar na resposta, mas você não precisa ficar "esperando na linha". Ela te avisa quando a resposta está pronta, o que é rápido, mas não instantâneo como em tempo real.
+*   **Aplicação:** Análise de grandes mensagens em fila, processamento de documentos que não exigem feedback imediato, mas são urgentes, e cenários onde a carga de trabalho é variável.
+
+498. **Hospedagem Multi-Adaptador | Multi-adapter Hosting**
+*   **Significado:** Uma capacidade de implantação de modelos que permite a um único endpoint ou instância de serviço hospedar múltiplos modelos ou adaptadores (*adapters*), otimizando o uso de recursos e reduzindo a sobrecarga operacional.
+*   **Explicação para leigos:** É como ter um único "garçom" (o servidor) que pode atender a vários "clientes" (diferentes modelos de IA) ao mesmo tempo e de forma eficiente, em vez de ter um garçom para cada um. Isso economiza recursos e torna o serviço mais rápido.
+*   **Aplicação:** Otimização de custos e recursos ao implantar vários modelos de **IA** que podem ser servidos por uma mesma infraestrutura, como em **LLMs** que usam **PEFT** (Parameter-Efficient Fine-Tuning).
+
+499. **Elastic Inference | Elastic Inference**
+*   **Significado:** Um serviço da AWS que permite adicionar aceleração de **inferência** de **GPU** às suas instâncias de EC2 e SageMaker sem precisar de instâncias de **GPU** completas, otimizando custos e desempenho para cargas de trabalho de **deep learning**.
+*   **Explicação para leigos:** É como ter uma "turbina" extra para acelerar as respostas da inteligência artificial. Você pode "ligar" essa turbina quando precisar e "desligar" quando não precisar, pagando apenas pelo uso, sem ter que comprar um motor completo e caro.
+*   **Aplicação:** Otimização de custos de **inferência de ML**, especialmente para modelos que exigem aceleração de **GPU** mas não justificam uma **GPU** dedicada.
+
+500. **Trainium | Trainium**
+*   **Significado:** Um chip de treinamento de **ML** personalizado da Amazon, projetado especificamente para acelerar o treinamento de modelos de **deep learning** em larga escala, como **LLMs** e **modelos de fundação**, com alta eficiência computacional.
+*   **Explicação para leigos:** Um "super chip" criado pela Amazon, feito sob medida para ensinar as inteligências artificiais gigantes de forma ultra-rápida e eficiente, como um "cérebro" especial para a "escola" das IAs.
+*   **Aplicação:** **Treinamento de modelos** de **deep learning** em larga escala, **LLMs** e **modelos de fundação** na AWS.
+
+501. **Inferentia | Inferentia**
+*   **Significado:** Um chip de **inferência de ML** personalizado da Amazon, projetado especificamente para acelerar a execução de modelos de **deep learning** em produção, otimizando o custo por **inferência** e a eficiência energética.
+*   **Explicação para leigos:** Outro "super chip" da Amazon, mas este é feito para que as inteligências artificiais já prontas deem suas respostas de forma super-rápida e super-barata, como um "cérebro" especial para o "trabalho" das IAs.
+*   **Aplicação:** **Inferência** de alto desempenho e baixo custo para modelos de **deep learning** em produção na AWS.
+
+502. **FPGA | FPGA**
+*   **Significado:** Uma Matriz de Portões Programáveis em Campo (Field-Programmable Gate Array), que é um circuito integrado que pode ser reconfigurado após a fabricação para executar funções específicas, oferecendo flexibilidade e desempenho para cargas de trabalho de **IA** especializadas.
+*   **Explicação para leigos:** Um tipo de "chip camaleão" que pode mudar sua forma de funcionar depois de pronto, para se adaptar e fazer tarefas muito específicas de inteligência artificial de forma super rápida.
+*   **Aplicação:** Aceleração de cargas de trabalho de **inferência de IA**, processamento de vídeo e outras tarefas que exigem flexibilidade e alto desempenho em hardware.
+
+503. **Azure AI Search | Azure AI Search**
+*   **Significado:** Um serviço de busca do Microsoft Azure que pode ser integrado a aplicações de **IA Generativa (GenAI)** para recuperação de informações relevantes, como parte de estratégias de **RAG** (Retrieval Augmented Generation).
+*   **Explicação para leigos:** É como um "motor de busca" inteligente da Microsoft que a inteligência artificial pode usar para encontrar informações em seus próprios documentos ou bases de dados, para dar respostas mais completas e precisas.
+*   **Aplicação:** Recuperação de informações para aplicações de **GenAI** e **RAG** no Azure.
+
+504. **Azure AI Agent Service | Azure AI Agent Service**
+*   **Significado:** Um serviço de agentes de **IA** dentro do Azure AI Foundry que permite a construção, implantação e orquestração de sistemas de agentes capazes de interagir e executar tarefas.
+*   **Explicação para leigos:** É um serviço no Azure que te ajuda a criar e gerenciar "robôs" de inteligência artificial que podem conversar, interagir com outros programas e realizar tarefas de forma autônoma.
+*   **Aplicação:** Desenvolvimento de agentes multi-agente e orquestração no Azure, parte do Azure AI Foundry.
+
+505. **Meta Llama | Meta Llama**
+*   **Significado:** Uma família de **modelos de fundação (FMs)** de linguagem desenvolvidos pela Meta (empresa do Facebook), que são acessíveis como Model-as-a-Service em plataformas de nuvem como o Amazon Bedrock e o Azure AI Foundry. Versões específicas incluem o Llama 3.1.
+*   **Explicação para leigos:** São modelos de inteligência artificial de linguagem criados pela empresa Meta (a mesma do Facebook), que servem como "cérebros" superinteligentes para gerar texto, entender conversas e outras tarefas, e que você pode usar em serviços de nuvem.
+*   **Aplicação:** Model-as-a-Service para **GenAI** em plataformas de nuvem.
+
+506. **Mistral Large | Mistral Large**
+*   **Significado:** Um **modelo de fundação (FM)** de linguagem altamente capaz, desenvolvido pela Mistral AI, acessível como Model-as-a-Service em plataformas de nuvem como o Azure AI Foundry.
+*   **Explicação para leigos:** É um modelo de inteligência artificial de linguagem muito poderoso, criado pela empresa Mistral AI, que pode ser usado em serviços de nuvem para gerar textos e entender a linguagem humana.
+*   **Aplicação:** Model-as-a-Service para **GenAI** no Azure.
+
+507. **Cohere-Command-R-Plus | Cohere-Command-R-Plus**
+*   **Significado:** Um **modelo de fundação (FM)** de linguagem da Cohere, projetado para tarefas de conversação e geração de texto avançada, acessível como Model-as-a-Service em plataformas de nuvem como o Azure AI Foundry.
+*   **Explicação para leigos:** Um modelo de inteligência artificial de linguagem da empresa Cohere, especializado em conversas e em criar textos de alta qualidade, disponível para ser usado como serviço em nuvem.
+*   **Aplicação:** Model-as-a-Service para **GenAI** no Azure.
+
+508. **Unity Catalog | Unity Catalog**
+*   **Significado:** Um catálogo unificado de dados e governança presente em plataformas como Databricks, que permite gerenciar e controlar todos os dados e ativos de **ML** em um único lugar, garantindo segurança e conformidade.
+*   **Explicação para leigos:** É como uma "biblioteca" central e um "sistema de segurança" para todos os dados e modelos de inteligência artificial de uma empresa. Ele organiza tudo e garante que apenas as pessoas certas acessem as informações, e que tudo esteja de acordo com as regras.
+*   **Aplicação:** **Governança** de dados e modelos em plataformas como Databricks, essencial para **MLOps** e **ética na GenAI**.
+
+509. **Granite Models | Granite Models**
+*   **Significado:** Modelos de **fundação (FMs)** desenvolvidos pela IBM, que fazem parte da plataforma watsonx.ai e são utilizados para desenvolvimento de **IA Generativa (GenAI)**.
+*   **Explicação para leigos:** São os modelos de inteligência artificial "básicos" e muito capazes que a IBM oferece. Eles servem como ponto de partida para quem quer criar aplicativos de IA que geram texto, imagens ou outros conteúdos.
+*   **Aplicação:** Desenvolvimento de **GenAI** na plataforma IBM watsonx.ai.
+
+510. **PaLM | PaLM**
+*   **Significado:** Uma família de **modelos de linguagem grandes (LLMs)** e **modelos de fundação (FMs)** desenvolvidos pelo Google, disponível no **Model Garden** da Vertex AI.
+*   **Explicação para leigos:** Um dos modelos de inteligência artificial de linguagem mais avançados do Google, que é como um "cérebro" de texto super inteligente e que pode ser usado para diversas tarefas envolvendo linguagem.
+*   **Aplicação:** Disponível no **Model Garden** do Google Cloud para diversas aplicações de linguagem e **GenAI**.
