@@ -96,53 +96,53 @@ Based on my research, I'll create a comprehensive table with the official produc
 
 | **Service Category** | **Service Name** | **Provider** | **Official Product Link** |
 |---------------------|------------------|--------------|---------------------------|
-| **Classical ML Platforms** | Amazon SageMaker AI | AWS | https://aws.amazon.com/sagemaker/[1] |
-| | Azure ML Studio | Azure | https://learn.microsoft.com/en-us/azure/machine-learning/[2] |
+| **Classical ML Platforms** | Amazon SageMaker AI | AWS | https://aws.amazon.com/sagemaker/|
+| | Azure ML Studio | Azure | https://learn.microsoft.com/en-us/azure/machine-learning/|
 | | Vertex AI | GCP | https://cloud.google.com/vertex-ai |
-| **MLOps - Core Platforms** | Amazon SageMaker AI (Unified Studio) | AWS | https://aws.amazon.com/sagemaker/[1] |
-| | Azure Machine Learning | Azure | https://learn.microsoft.com/en-us/azure/machine-learning/[2] |
+| **MLOps - Core Platforms** | Amazon SageMaker AI (Unified Studio) | AWS | https://aws.amazon.com/sagemaker/|
+| | Azure Machine Learning | Azure | https://learn.microsoft.com/en-us/azure/machine-learning/|
 | | Vertex AI Pipelines | GCP | https://cloud.google.com/vertex-ai/docs/pipelines |
-| **MLOps - Model Management** | SageMaker Model Registry | AWS | https://docs.aws.amazon.com/sagemaker/latest/dg/model-registry.html[3] |
-| | Azure Model Registry | Azure | https://learn.microsoft.com/en-us/azure/machine-learning/how-to-manage-models[2] |
+| **MLOps - Model Management** | SageMaker Model Registry | AWS | https://docs.aws.amazon.com/sagemaker/latest/dg/model-registry.html|
+| | Azure Model Registry | Azure | https://learn.microsoft.com/en-us/azure/machine-learning/how-to-manage-models|
 | | Vertex AI Model Registry | GCP | https://cloud.google.com/vertex-ai/docs/model-registry |
-| **MLOps - Workflow Management** | SageMaker Pipelines | AWS | https://aws.amazon.com/sagemaker/ai/pipelines/[4] |
-| | Azure ML Pipelines | Azure | https://learn.microsoft.com/en-us/azure/machine-learning/concept-ml-pipelines[5] |
+| **MLOps - Workflow Management** | SageMaker Pipelines | AWS | https://aws.amazon.com/sagemaker/ai/pipelines/|
+| | Azure ML Pipelines | Azure | https://learn.microsoft.com/en-us/azure/machine-learning/concept-ml-pipelines|
 | | Vertex AI Pipelines | GCP | https://cloud.google.com/vertex-ai/docs/pipelines |
-| **MLOps - Model Monitoring** | SageMaker Clarify/Debugger | AWS | https://aws.amazon.com/sagemaker/ai/clarify/[6] |
-| | Responsible AI Dashboard | Azure | https://learn.microsoft.com/en-us/azure/machine-learning/how-to-responsible-ai-dashboard[7] |
+| **MLOps - Model Monitoring** | SageMaker Clarify/Debugger | AWS | https://aws.amazon.com/sagemaker/ai/clarify/|
+| | Responsible AI Dashboard | Azure | https://learn.microsoft.com/en-us/azure/machine-learning/how-to-responsible-ai-dashboard|
 | | Model Evaluation/Monitoring | GCP | https://cloud.google.com/vertex-ai/docs/evaluation/introduction |
-| **MLOps - Additional Tools** | SageMaker Catalog | AWS | https://aws.amazon.com/sagemaker/catalog/[8] |
-| | MLOps v2 | Azure | https://github.com/Azure/mlops-v2[9] |
+| **MLOps - Additional Tools** | SageMaker Catalog | AWS | https://aws.amazon.com/sagemaker/catalog/|
+| | MLOps v2 | Azure | https://github.com/Azure/mlops-v2|
 | | Cloud Build CI/CD | GCP | https://cloud.google.com/build |
-| **Data Engineering - Integration** | AWS Glue | AWS | https://docs.aws.amazon.com/glue/latest/dg/what-is-glue.html[10] |
+| **Data Engineering - Integration** | AWS Glue | AWS | https://docs.aws.amazon.com/glue/latest/dg/what-is-glue.html|
 | | Azure Data Factory | Azure | https://azure.microsoft.com/en-us/products/data-factory |
 | | Dataflow (Apache Beam) | GCP | https://cloud.google.com/dataflow |
-| **Data Engineering - Big Data** | Amazon EMR | AWS | https://aws.amazon.com/emr/[11] |
-| | Azure Databricks | Azure | https://learn.microsoft.com/en-us/azure/databricks/introduction/[12] |
+| **Data Engineering - Big Data** | Amazon EMR | AWS | https://aws.amazon.com/emr/|
+| | Azure Databricks | Azure | https://learn.microsoft.com/en-us/azure/databricks/introduction/|
 | | Dataproc (Spark) | GCP | https://cloud.google.com/dataproc |
-| **Data Engineering - Warehousing** | Amazon Redshift | AWS | https://aws.amazon.com/redshift/[13] |
+| **Data Engineering - Warehousing** | Amazon Redshift | AWS | https://aws.amazon.com/redshift/|
 | | Microsoft Fabric/Synapse | Azure | https://azure.microsoft.com/en-us/products/synapse-analytics |
 | | BigQuery (AI-ready) | GCP | https://cloud.google.com/bigquery |
-| **Data Engineering - Query Services** | Amazon Athena | AWS | https://aws.amazon.com/athena/[14] |
-| | Event Hubs | Azure | https://azure.microsoft.com/en-us/products/event-hubs[15] |
+| **Data Engineering - Query Services** | Amazon Athena | AWS | https://aws.amazon.com/athena/|
+| | Event Hubs | Azure | https://azure.microsoft.com/en-us/products/event-hubs|
 | | Pub/Sub | GCP | https://cloud.google.com/pubsub |
 | **Data Engineering - Governance** | Lake Formation | AWS | https://aws.amazon.com/lake-formation |
 | | Microsoft Fabric/Synapse | Azure | https://azure.microsoft.com/en-us/products/synapse-analytics |
 | | DataPlex | GCP | https://cloud.google.com/dataplex |
-| **GenAI Development - Platforms** | Amazon Bedrock | AWS | https://aws.amazon.com/bedrock/[16] |
-| | Azure AI Foundry | Azure | https://learn.microsoft.com/en-us/azure/ai-foundry/what-is-azure-ai-foundry[17] |
+| **GenAI Development - Platforms** | Amazon Bedrock | AWS | https://aws.amazon.com/bedrock/|
+| | Azure AI Foundry | Azure | https://learn.microsoft.com/en-us/azure/ai-foundry/what-is-azure-ai-foundry|
 | | Vertex AI with Gemini | GCP | https://cloud.google.com/vertex-ai |
-| **GenAI Development - Model Access** | Foundation Models Hub | AWS | https://aws.amazon.com/bedrock/[16] |
-| | Azure OpenAI Service | Azure | https://learn.microsoft.com/en-us/azure/ai-foundry/openai/overview[18] |
+| **GenAI Development - Model Access** | Foundation Models Hub | AWS | https://aws.amazon.com/bedrock/|
+| | Azure OpenAI Service | Azure | https://learn.microsoft.com/en-us/azure/ai-foundry/openai/overview|
 | | Vertex AI Model Garden | GCP | https://cloud.google.com/vertex-ai/docs/model-garden |
-| **Multi-Agent AI - Platforms** | Agents for Amazon Bedrock | AWS | https://aws.amazon.com/bedrock/[16] |
-| | Azure AI Foundry Agent Service | Azure | https://azure.microsoft.com/en-us/products/ai-foundry/agent-service/[19] |
+| **Multi-Agent AI - Platforms** | Agents for Amazon Bedrock | AWS | https://aws.amazon.com/bedrock/|
+| | Azure AI Foundry Agent Service | Azure | https://azure.microsoft.com/en-us/products/ai-foundry/agent-service/|
 | | Vertex AI Agent Builder | GCP | https://cloud.google.com/vertex-ai/docs/agent-builder |
-| **Multi-Agent AI - Orchestration** | AWS Step Functions | AWS | https://aws.amazon.com/step-functions/[20] |
-| | Function/Tool Calling | Azure | https://learn.microsoft.com/en-us/azure/ai-foundry/agents/how-to/tools/function-calling[21] |
+| **Multi-Agent AI - Orchestration** | AWS Step Functions | AWS | https://aws.amazon.com/step-functions/|
+| | Function/Tool Calling | Azure | https://learn.microsoft.com/en-us/azure/ai-foundry/agents/how-to/tools/function-calling|
 | | Dialogflow CX | GCP | https://cloud.google.com/dialogflow/cx |
-| **Multi-Agent AI - Development Tools** | SageMaker AI + Nova | AWS | https://aws.amazon.com/sagemaker/[1] |
-| | Azure AI Foundry SDK | Azure | https://learn.microsoft.com/en-us/azure/ai-foundry/how-to/develop/sdk-overview[22] |
+| **Multi-Agent AI - Development Tools** | SageMaker AI + Nova | AWS | https://aws.amazon.com/sagemaker/|
+| | Azure AI Foundry SDK | Azure | https://learn.microsoft.com/en-us/azure/ai-foundry/how-to/develop/sdk-overview|
 | | Agent SDK/ADK | GCP | https://cloud.google.com/vertex-ai/docs/agent-builder |
 | **Additional Offerings** | Amazon Q (AI Assistant) | AWS | https://aws.amazon.com/q |
 | | Microsoft Copilot | Azure | https://www.microsoft.com/en-us/microsoft-copilot |
