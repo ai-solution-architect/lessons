@@ -37,13 +37,13 @@ Per typical capstone requirements (such as delivering “a complete, functional 
 
 | Day | Milestone (2 hours max) |
 | :-- | :-- |
-| 1 | Project scaffolding, API keys, basic UI wireframe [Day 01](schedule/day-01-md)|
-| 2 | Photo upload, safe upload validation [Day 02](schedule/day-02-md)|
-| 3 | Integrate image generation API, process photo [Day 03](schedule/day-03-md)|
-| 4 | Integrate LLM story generation, join flows [Day 04](schedule/day-04-md)|
-| 5 | Generate multi-chapter story and pull images [Day 05](schedule/day-05-md)|
-| 6 | Assemble story+images into PDF, offer download [Day 06](schedule/day-06-md)|
-| 7 | Bug fixing, polish, write documentation/demo [Day 07](schedule/day-07-md)|
+| 1 | Project scaffolding, API keys, basic UI wireframe [Day 01](schedule/day-01.md)|
+| 2 | Photo upload, safe upload validation [Day 02](schedule/day-02.md)|
+| 3 | Integrate image generation API, process photo [Day 03](schedule/day-03.md)|
+| 4 | Integrate LLM story generation, join flows [Day 04](schedule/day-04.md)|
+| 5 | Generate multi-chapter story and pull images [Day 05](schedule/day-05.md)|
+| 6 | Assemble story+images into PDF, offer download [Day 06](schedule/day-06.md)|
+| 7 | Bug fixing, polish, write documentation/demo [Day 07](schedule/day-07.md)|
 
 
 
