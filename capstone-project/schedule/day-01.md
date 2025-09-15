@@ -1,173 +1,218 @@
-## 🚦 Day 1: Project Kickoff – Tooling, Planning, and Environment Setup
-
-**Goal:**
-By the end of your first 2-hour session, you will have:
-
-- Chosen and installed the essential tools
-- Created a basic project scaffold (Next.js/React)
-- Set up version control
-- Built your first UI placeholder (welcome/upload page)
-- Written down your roadmap for the coming days
+Certainly! Here is your updated detailed **Day 1** development guide incorporating all the specified updates for your app **Snapptale**, updated tooling, IDE, and AI assistant:
 
 ***
 
-### 1. 📋 What You’re Building
-
-You will create a simple web app where:
-
-- The user uploads a child’s photo
-- (In later steps) The app will turn it into a personalized storybook using AI APIs
-Today, you won’t connect to AI yet—just get running, so you can iterate quickly!
+# Snapptale — Day 1 Development Guide  
+### Kickoff, Tooling Setup & Initial UI Scaffold  
+*Goal: Complete within ~2 hours tonight*
 
 ***
 
-### 2. 🛠️ Tools You Need (Install These First)
+## 🚦 Day 1: Project Kickoff – Tooling, Planning and Environment Setup
 
-| Tool | What For | How/Where to Get |
-| :-- | :-- | :-- |
-| Node.js (LTS version) | Runs JS/React app | [nodejs.org](https://nodejs.org) |
-| Git | Version control | [git-scm.com](https://git-scm.com) |
-| VS Code (or WebStorm) | Code editor | [code.visualstudio.com](https://code.visualstudio.com) |
-| GitHub account | Free repo hosting | [github.com](https://github.com) |
-| Figma (web signup) | UI prototyping | [figma.com](https://figma.com) |
-| (Optional) GitHub Copilot | AI coding assistant | Enable in VS Code Extensions |
-| Browser (Chrome/Edge) | For app preview | Already installed (likely) |
-
+### Goal:
+By the end of today’s 2-hour session, you will have:  
+- Installed and configured all essential tools  
+- Bootstrapped a fresh Next.js + React + TypeScript app with Tailwind CSS & ESLint  
+- Initialized Git version control  
+- Created a simple placeholder homepage with an upload input  
+- Written a clear roadmap for the next development steps
 
 ***
 
-### 3. 🏗️ Step-by-Step: Your First 2 Hours
+### 1. 📋 What You’re Building Today  
+You will create the very first working version of **Snapptale**, a web app that:  
+- Lets users upload a child’s photo (UI placeholder only for now)  
+- Prepares the foundation for adding AI-driven personalized story generation later  
+- Shows a welcoming landing page  
+> **Note:** Today you’re not integrating AI yet — focus on getting your dev environment ready with a minimal working UI.
 
-#### **0. Gather Prerequisites (10min)**
+***
 
-- Install **Node.js**
-- Install **Git**
-- Install **VS Code**
-_All are free. Test them: `node -v`, `git --version`, open VS Code._
+### 2. 🛠 Essential Tools Setup — Install & Prepare
 
+| Tool                 | Purpose                                               | Where to Get / Notes                                           |
+|----------------------|------------------------------------------------------|----------------------------------------------------------------|
+| **Node.js (LTS)**    | Run JavaScript runtime & Next.js framework           | https://nodejs.org (v18+ recommended)                         |
+| **Git**              | Version control                                       | https://git-scm.com                                            |
+| **Qoder IDE**        | Your preferred development environment                | Download and install the latest from your source               |
+| **GitHub Account**   | Remote Git repository hosting                         | https://github.com                                            |
+| **React + Next.js**  | React app framework with SSR & routing                | Installed via `create-next-app` CLI                            |
+| **TypeScript**       | Typed superset of JavaScript for code safety          | Integrated via scaffolding                                       |
+| **Tailwind CSS**     | Utility-first CSS for fast styling & responsiveness   | Setup integrated in Next.js scaffolding                       |
+| **ESLint**           | Linting & code quality                                | Setup integrated in scaffolding                                |
+| **Google Gemini CLI + Qoder AI Tool** | AI assistant to speed up coding           | Configure in Qoder for contextual AI fetch & code generation   |
+| **Figma (optional)** | UI design and prototyping                             | https://figma.com, good for early UI sketching                 |
 
-#### **1. Create a Project Folder \& Initialize Git (10min)**
+***
+
+### 3. 🏗 Step-by-Step for Day 1 (First 2 Hours)
+
+***
+
+#### 0 - Prepare Your Environment (Approx. 20 minutes)
+
+1. **Install Node.js and Git.**  
+   Verify installation by running:
+   ```bash
+   node -v
+   git --version
+   ```
+2. **Install or Open Qoder IDE.**  
+   Set it up if needed and enable AI code assistance tools:
+   - Enable Google Gemini CLI integration  
+   - Enable Qoder AI assistant features
+
+***
+
+#### 1 - Initialize Your Project Folder & Git (10 minutes)
+
+Open Qoder terminal or command line:
 
 ```bash
-mkdir ai-storybook
-cd ai-storybook
+mkdir snapptale
+cd snapptale
 git init
 ```
 
-_Next, start a repo on GitHub and follow instructions there. (If unsure, can push online tomorrow.)_
+Create a GitHub repository named "snapptale" (or as you prefer). Set it remote later.
 
-#### **2. Bootstrap the Web App with Next.js (20min)**
+***
 
-_Next.js is a React-based framework—great for beginners and deploys ANYWHERE._
+#### 2 - Bootstrap Your App with Next.js + Tailwind + TypeScript + ESLint (25 minutes)
+
+Run the official Next.js setup:
 
 ```bash
-npx create-next-app@latest .
+npx create-next-app@latest . --typescript --eslint --tailwind
 ```
 
-- Name? “ai-storybook”
-- TypeScript is optional but recommended (say “yes” if you’re curious, “no” if not)
-- ESLint? Yes
-- src dir? Yes
-- Tailwind CSS? Yes (makes UI fast to build and pretty)
-- Experimental features? No
+- Select **Yes** to TypeScript, ESLint, Tailwind CSS prompts.  
+- Walk through defaults: choose default value for experimental features (No).  
+- Wait for dependencies to install.  
 
-_Let it install. When done:_
+***
+
+#### 3 - Run & Verify Local Dev Server (5 minutes)
+
+Start the app:
 
 ```bash
 npm run dev
 ```
 
-- Open `http://localhost:3000` in browser—you’ll see the default page.
+Open browser at [http://localhost:3000](http://localhost:3000) — you should see the Next.js starter page.
 
+***
 
-#### **3. Clean Up \& Make It Yours (15min)**
+#### 4 - Clean Homepage & Customize UI (20 minutes)
 
-- Open the `src/pages/index.js` or `.tsx` – change `<h1>Welcome to Next.js!</h1>` to
-`<h1>AI Storybook Generator</h1>`
-- Delete default filler components (e.g., “Learn Next” links).
+Open `src/pages/index.tsx` in Qoder and:
 
+- Remove unnecessary default content  
+- Replace it by a **Snapptale welcome page** template:
 
-#### **4. Set Up Your Repo for Clean Coding (10min)**
+Paste inside the component’s return:
 
-- In VS Code, go to **Source Control** (or terminal):
-
-```bash
-git add .
-git commit -m "Initial project setup"
-```
-
-
-#### **5. Make a Simple Welcome \& Upload UI (20min)**
-
-- In `src/pages/index.js` or `.tsx`, paste this code **inside the exported function**:
-
-```jsx
+```tsx
 return (
-  <main className="flex flex-col items-center justify-center min-h-screen bg-gray-100">
-    <h1 className="text-4xl font-bold mb-4">AI Storybook Generator</h1>
-    <p className="mb-6 text-xl">Upload a photo to begin</p>
+  <main className="flex flex-col items-center justify-center min-h-screen bg-gray-100 p-6">
+    <h1 className="text-5xl font-extrabold mb-6 text-blue-600">Snapptale</h1>
+    <p className="text-lg mb-8">Upload a photo of your child to start generating their personalized storybook</p>
     <input
       type="file"
       accept="image/*"
-      className="mb-6 border border-gray-400 px-4 py-2 rounded"
+      className="mb-8 p-2 border border-gray-400 rounded"
       disabled
     />
-    <button className="bg-blue-600 text-white px-6 py-2 rounded shadow opacity-50" disabled>
-      Next (Coming soon)
+    <button className="bg-blue-500 text-white px-6 py-3 rounded opacity-50 cursor-not-allowed" disabled>
+      Next (coming soon)
     </button>
   </main>
 )
 ```
 
-- Save, look in browser. You now have a modern landing page with a file upload control (disabled, implementation will come later).
+Save and reload your app in the browser.
 
+***
 
-#### **6. Quick Commit (2min)**
+#### 5 - Initialize Codebase Commit (5 minutes)
+
+Back to Qoder terminal:
 
 ```bash
 git add .
-git commit -m "Add simple home and upload page"
+git commit -m "Initial commit: Next.js + Tailwind scaffold & snapptale landing page"
 ```
 
+***
 
-#### **7. Map Your Next Steps (15min)**
+#### 6 - Write Your Development Roadmap (5 minutes)
 
-In a plain README.md or a Google Doc, write (you can copy this):
+Create a `README.md` file or use any note tool, and jot down:
 
 ```markdown
-Roadmap:
-1. Make file upload actually save a photo (tomorrow)
-2. Connect to AI API for generating art/story (after file upload works)
-3. Display generated results in the UI
-4. Add user download/preview/export options
-5. Polish look, test, and deploy MVP
+## Snapptale Development Roadmap
+
+### Day 1 - Setup & Initial UI (Done)
+
+- Scaffolded Next.js + TypeScript + Tailwind app
+- Made simple landing/home page with disabled photo upload
+
+### Day 2 - Implement Photo Upload and Preview
+
+- Enable file uploads & preview image in UI
+- Setup backend API endpoint for upload storage (temp)
+
+### Day 3 - Integrate Gemini CLI API for AI Story & Illustration
+
+- Connect image to Gemini CLI for AI-generated character art
+- Connect text generation API for story creation
+
+### Day 4 - Display generated chapters with illustrations
+
+- Make an interactive book preview UI
+- Add loading and error handling
+
+### Day 5 - Add Save, Download & Export to PDF
+
+- Implement user download of storybook PDF
+- Add premium feature gating for paid upgrades
+
+### Day 6 - Testing, Bug Fixes & UI polish
+### Day 7 - Final tweak, deploy, prepare demo & deliverable
 ```
 
+***
+
+### Coach’s Pro Tips for Today:
+
+- Use **Google Gemini CLI** and **Qoder AI Tool** actively while coding—ask for React component snippets and API call examples.  
+- Don’t stress — today’s goal is NOT a polished product but a stable skeleton you can build on.  
+- Experiment briefly with Tailwind classes to get familiar with utility-first styling.  
 
 ***
 
-### 4. 🔑 Coach Tips
-
-- Don’t try to “do it all” tonight! If you have time left, experiment with Tailwind classes in your main component.
-- Take 5min to sketch the page flow in **Figma** (rectangles, arrows—don’t overthink!) and share your screenshot with peers/tutor for feedback.
-- If you get stuck on setup, search for “[tool] quick start” or ask Copilot/chat for a snippet.
-
-***
-
-## ✅ By Tonight’s End, You Should Have:
-
-- Project folder with clean scaffold
-- Local Next.js dev server running
-- Main page with heading and disabled upload
-- Git repo with at least two commits
-- Your next-day to-do written out
+### What You’ll Have by Tonight:  
+- Snapptale folder initialized with Git  
+- Next.js + TS + Tailwind + ESLint ready to run locally  
+- Custom landing page with disabled upload input & “Next” button  
+- Dev roadmap written and committed for collaboration & clarity  
+- Basic comfort with your tools and setup environment  
 
 ***
 
-### Tomorrow: Enable File Upload, Preview, and Start Thinking About API Integration!
-
-If you want, ask for “Day 2: Enabling Uploads \& Starting API Integration” and I’ll walk you through it step by step.
+### Want Next Steps?  
+After today’s session, just ask:  
+**“Guide me through Day 2: photo upload & backend setup for Snapptale”**  
 
 ***
-**This plan is fully production-aligned, proven by years of real projects and teaching beginners and teams. Follow it literally and you’ll rapidly gain speed and confidence!**
 
+**You’re off to a great start! Follow this step-by-step exactly, and your first day will be a success.**  
+If you want, I can provide commands, config snippets, even debugging help as you code.  
+
+***
+
+Would you like me to prepare a ready-to-paste `package.json` and sample `tailwind.config.js` for your Snapptale app?  
+Or a Quick Start AI prompt set for your Gemini CLI in Qoder?  
+Let me know!
