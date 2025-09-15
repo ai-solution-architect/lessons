@@ -1,219 +1,295 @@
-# Snapptale — Day 1 Development Guide (with TDD approach)  
-### Kickoff, Setup & Scaffold using Next.js App Router + Tailwind + TypeScript + ESLint  
-*Goal: Complete within ~2 hours*
+# Snapptale — Day 1 Development Guide  
+### Kickoff, Tooling & Initial UI Scaffold with Next.js App Router + TDD basics  
+*Goal: Complete within ~2 hours tonight*
 
 ***
 
-## 🚦 Goals for Today (TDD-focused)
+## 🚦 Day 1: Kickoff & Setup — Next.js App Router + Tailwind + TypeScript + ESLint + Tests
 
-By the end of Day 1, you will have:
+### Goal for Today  
+By the end of this session you will have:
 
-- Installed and configured all necessary tools  
-- Scaffolded a Next.js project with App Router (`src/app`) including Tailwind and TypeScript  
-- Set up an initial test framework (Jest + React Testing Library)  
-- Written failing tests for your two pages (Homepage & Upload)  
-- Implemented minimal working versions of those pages to pass tests  
-- Committed code with meaningful TDD cycle stages  
-- Drafted a clear development roadmap including AI integration timeline  
-
-***
-
-## Tools & Dependencies (Confirm these are installed)
-
-| Tool               | Purpose                                        | Installation Source                    |
-|--------------------|-----------------------------------------------|--------------------------------------|
-| Node.js (v18+)     | Runtime & Next.js dev                          | https://nodejs.org                   |
-| Git                | Source control                                | https://git-scm.com                  |
-| Qoder IDE          | Development + AI-assist with Gemini CLI       | Company source / Qoder installer     |
-| GitHub             | Remote git repository                         | https://github.com                   |
-| Next.js            | Framework (App Router by default)             | `npx create-next-app@latest`         |
-| TypeScript         | Static typing                                | part of scaffold                     |
-| Tailwind CSS       | Utility-first CSS                            | Integrated via scaffold              |
-| ESLint             | Linting                                     | Integrated via scaffold              |
-| Jest + Testing Library | Test framework and React component testing | Setup instructions below            |
-| Google Gemini CLI   | AI for coding assistance (IDE integration)    | Enable in Qoder IDE                  |
+- Installed and configured all essential tools (Node.js, Git, Qoder IDE)  
+- Created a new Next.js project with the modern App Router (`src/app` folder) including Tailwind CSS and TypeScript setup  
+- Set up ESLint for code quality  
+- Implemented simple test files for your homepage and upload pages using Jest and React Testing Library  
+- Written minimal code so those tests pass (Test-Driven Development cycle begins!)  
+- Committed your progress with clear messages  
+- Drafted a clear, beginner-friendly development roadmap including future AI integration steps  
 
 ***
 
-## Step-by-Step TDD Workflow
-
-### 1. Install testing libraries
-
-Run in terminal:
-
-```bash
-npm install --save-dev jest @testing-library/react @testing-library/jest-dom @testing-library/user-event
-```
-
-Add Jest config in `package.json` (if not auto-added):
-
-```json
-"jest": {
-  "testEnvironment": "jsdom",
-  "setupFilesAfterEnv": ["@testing-library/jest-dom/extend-expect"]
-}
-```
+### 1. What You’re Building Today  
+- A React-based web app named **Snapptale**  
+- A welcoming homepage (`src/app/page.tsx`)  
+- An upload page placeholder (`src/app/upload/page.tsx`)  
+- Next.js **App Router** is used for routing — this means each page is a component inside the `src/app` folder  
+- File input on Upload page is disabled for now  
+- Testing framework will be set up and basic tests written to check these pages  
+> **Important:** No actual AI-powered features or image generation yet (NanoBanana integration begins Day 3)  
+> Google Gemini CLI is your **AI coding assistant inside the IDE**, *not* the AI model for images  
 
 ***
 
-### 2. Create test files for pages
+### 2. Tools You’ll Need  
 
-Create folder `tests` at project root or inside `src`.
+| Tool                     | Purpose                          | Where to get it                              |
+|--------------------------|---------------------------------|---------------------------------------------|
+| Node.js (LTS)            | Run JavaScript and Next.js       | [https://nodejs.org](https://nodejs.org)    |
+| Git                      | Version control                 | [https://git-scm.com](https://git-scm.com) |
+| Qoder IDE                | Development environment + AI assist | Provided internally or official source     |
+| GitHub                   | Remote source control host      | [https://github.com](https://github.com)    |
+| React + Next.js          | Frontend app with file-based routing | Bootstrapped via CLI                        |
+| TypeScript               | Typed JavaScript for code safety | Included in scaffold                         |
+| ESLint                   | Code linter for quality          | Included in scaffold                         |
+| Tailwind CSS             | Utility-first styling framework  | Included in scaffold                         |
+| Jest + React Testing Library | Testing frameworks             | Installed manually inside project            |
+| Google Gemini CLI + Qoder AI Tool | Coding assistant            | Enable in Qoder IDE                          |
+| Figma (optional)         | UI design & prototyping          | [https://figma.com](https://figma.com)      |
 
-For Home page, create `tests/Home.test.tsx`:
+***
 
-```tsx
-import { render, screen } from '@testing-library/react';
-import Home from '../src/app/page';
+### 3. Step-by-Step Development: Day 1 (About 2 hours)
 
-describe('Home Page', () => {
-  it('renders heading and navigation link', () => {
-    render(<Home />);
-    expect(screen.getByRole('heading', { name: /snapptale/i })).toBeInTheDocument();
-    expect(screen.getByRole('link', { name: /go to upload/i })).toBeInTheDocument();
+***
+
+#### 0 - Prepare Your Environment (Approx. 20 minutes)
+
+- Install **Node.js LTS** and **Git** if not already installed.  
+- Verify installs by running below commands in your terminal:
+  ```bash
+  node -v
+  git --version
+  ```
+- Open **Qoder IDE** and make sure **Google Gemini CLI** and **Qoder AI assistant** plugins are activated so you get AI coding help while you work.
+
+***
+
+#### 1 - Create Project Folder & Initialize Git (Approx. 10 minutes)
+
+- In your terminal or inside Qoder terminal panel, run:
+
+  ```bash
+  mkdir snapptale
+  cd snapptale
+  git init
+  ```
+
+- This creates your project folder and initializes it for Git version control.
+
+- To link to a GitHub repo later, you can push your commits once done.
+
+***
+
+#### 2 - Scaffold Next.js App (Approx. 25 minutes)
+
+- Run the official Next.js bootstrap tool with TypeScript, ESLint, and Tailwind CSS:
+
+  ```bash
+  npx create-next-app@latest . --typescript --eslint --tailwind
+  ```
+
+- Answer these prompts:
+
+  - Use TypeScript? **Yes**  
+  - Use ESLint? **Yes**  
+  - Use Tailwind CSS? **Yes**  
+  - Use experimental features? **No**
+
+- Wait for dependencies to install fully.
+
+***
+
+#### 3 - Setup Testing Dependencies (Approx. 10 minutes)
+
+- In the root of your project (`/snapptale`), install testing libraries:
+
+  ```bash
+  npm install --save-dev jest @testing-library/react @testing-library/jest-dom @testing-library/user-event
+  ```
+
+- Create a config file at project root as `jest.config.js`:
+
+  ```js
+  module.exports = {
+    testEnvironment: 'jsdom',
+    setupFilesAfterEnv: ['@testing-library/jest-dom/extend-expect'],
+    moduleDirectories: ['node_modules', '<rootDir>/'],
+    testPathIgnorePatterns: ['/node_modules/', '/.next/'],
+  };
+  ```
+
+- Edit `package.json` to add a **test** script (if not added):
+
+  ```json
+  "scripts": {
+    "test": "jest"
+  }
+  ```
+
+***
+
+#### 4 - Create Your Pages in `src/app/` Folder (Approx. 25 minutes)
+
+- **Homepage:** Edit file `src/app/page.tsx` to have:
+
+  ```tsx
+  import Link from 'next/link';
+
+  export default function Home() {
+    return (
+      <main className="flex flex-col items-center justify-center min-h-screen bg-gray-100 p-8">
+        <h1 className="text-5xl font-extrabold text-blue-600 mb-6">Snapptale</h1>
+        <p className="mb-8 text-lg">
+          Upload a photo to start your personalized storybook journey.
+        </p>
+        <Link
+          href="/upload"
+          className="bg-blue-600 hover:bg-blue-700 text-white px-6 py-3 rounded focus:ring-2 focus:ring-blue-500"
+        >
+          Go to Upload
+        </Link>
+      </main>
+    );
+  }
+  ```
+
+- **Upload page:** Create a folder `src/app/upload/` if not existing, then create `page.tsx` inside it with:
+
+  ```tsx
+  export default function Upload() {
+    return (
+      <main className="flex flex-col items-center justify-center min-h-screen bg-gray-100 p-8">
+        <h1 className="text-4xl font-bold mb-6">Upload Photo</h1>
+        <input
+          type="file"
+          accept="image/*"
+          className="border border-gray-400 p-2 rounded mb-6"
+          disabled
+        />
+        <button
+          disabled
+          className="bg-gray-400 cursor-not-allowed text-white px-6 py-3 rounded"
+        >
+          Next (coming soon)
+        </button>
+      </main>
+    );
+  }
+  ```
+
+***
+
+#### 5 - Create Test Files (Approx. 20 minutes)
+
+- Create a folder at project root `/tests`
+
+- Create `tests/home.test.tsx`:
+
+  ```tsx
+  import { render, screen } from '@testing-library/react';
+  import Home from '../src/app/page';
+
+  describe('Home Page', () => {
+    it('renders Snapptale title and navigation link', () => {
+      render(<Home />);
+      expect(screen.getByRole('heading', { name: /snapptale/i })).toBeInTheDocument();
+      expect(screen.getByRole('link', { name: /go to upload/i })).toBeInTheDocument();
+    });
   });
-});
-```
+  ```
 
-For Upload page, create `tests/Upload.test.tsx`:
+- Create `tests/upload.test.tsx`:
 
-```tsx
-import { render, screen } from '@testing-library/react';
-import Upload from '../src/app/upload/page';
+  ```tsx
+  import { render, screen } from '@testing-library/react';
+  import Upload from '../src/app/upload/page';
 
-describe('Upload Page', () => {
-  it('renders upload heading and disabled input/button', () => {
-    render(<Upload />);
-    expect(screen.getByRole('heading', { name: /upload photo/i })).toBeInTheDocument();
-    expect(screen.getByRole('textbox', { hidden: true })).toBeInTheDocument(); // input type file is hidden by label
-    expect(screen.getByRole('button', { name: /next/i })).toBeDisabled();
+  describe('Upload Page', () => {
+    it('renders upload heading and disabled input and button', () => {
+      render(<Upload />);
+      expect(screen.getByRole('heading', { name: /upload photo/i })).toBeInTheDocument();
+      expect(screen.getByRole('textbox', { hidden: true })).toBeInTheDocument();
+      expect(screen.getByRole('button', { name: /next/i })).toBeDisabled();
+    });
   });
-});
-```
-
-*Note*: For file inputs, queries may require tuning or alternative selectors.
+  ```
 
 ***
 
-### 3. Run tests
+#### 6 - Run Your Tests (Approx. 10 minutes)
 
-In terminal:
+- Run in terminal:
 
-```bash
-npm test
-```
+  ```bash
+  npm test
+  ```
 
-You will see failing tests initially (no components yet or with old code).
-
-***
-
-### 4. Implement pages to pass tests
-
-- Edit `src/app/page.tsx` (Home page) to include:
-
-```tsx
-import Link from 'next/link';
-
-export default function Home() {
-  return (
-    <main className="flex flex-col items-center justify-center min-h-screen bg-gray-100 p-8">
-      <h1 className="text-5xl font-extrabold text-blue-600 mb-6">Snapptale</h1>
-      <p className="mb-8 text-lg">Upload a photo to start your personalized storybook journey.</p>
-      <Link href="/upload" className="bg-blue-600 hover:bg-blue-700 text-white px-6 py-3 rounded focus:outline-none focus:ring-2 focus:ring-blue-500">
-        Go to Upload
-      </Link>
-    </main>
-  );
-}
-```
-
-- Edit `src/app/upload/page.tsx` (Upload page):
-
-```tsx
-export default function Upload() {
-  return (
-    <main className="flex flex-col items-center justify-center min-h-screen bg-gray-100 p-8">
-      <h1 className="text-4xl font-bold mb-6">Upload Photo</h1>
-      <input
-        type="file"
-        accept="image/*"
-        className="border border-gray-400 p-2 rounded mb-6"
-        disabled
-      />
-      <button
-        disabled
-        className="bg-gray-400 cursor-not-allowed text-white px-6 py-3 rounded"
-      >
-        Next (coming soon)
-      </button>
-    </main>
-  );
-}
-```
+- Initially, tests may fail — fix your components code until they pass.
 
 ***
 
-### 5. Re-run tests and confirm passing
+#### 7 - Run Your App & Explore (Approx. 5 minutes)
 
-```bash
-npm test
-```
+- Start dev server:
 
-All tests should now pass.
+  ```bash
+  npm run dev
+  ```
 
-***
-
-### 6. Run dev server and check UI
-
-```bash
-npm run dev
-```
-
-Navigate:
-
-- http://localhost:3000 → Home page  
-- Click “Go to Upload” → Upload page appears
+- Open browser at `http://localhost:3000`, check homepage  
+- Click “Go to Upload” to navigate to upload page
 
 ***
 
-### 7. Commit code
+#### 8 - Commit Your Progress (Approx. 5 minutes)
 
 ```bash
 git add .
-git commit -m "Add Home and Upload pages with passing tests (TDD)"
+git commit -m "TDD: Scaffold Snapptale Next.js app with Home & Upload pages and passing tests"
 ```
 
 ***
 
-### 8. Write your development roadmap in `README.md`
+#### 9 - Write Your Roadmap (Approx. 5 minutes)
+
+Add/update `README.md` at project root:
 
 ```markdown
-# Snapptale Development Roadmap (TDD-driven)
+# Snapptale Development Roadmap (TDD)
 
-## Day 1: Setup & Scaffold with Tests (completed)
+## Day 1: Setup & test scaffold (done)
+- Complete Next.js App Router + TS + Tailwind + ESLint setup
+- Home and Upload pages with tests and routing configured
 
-- Jest & Testing Library installed & configured  
-- Tests added for Home & Upload pages (failing initially)  
-- Pages implemented to pass tests  
-- Basic routing & UI scaffold ready  
+## Day 2:
+- Implement file upload + live image preview (with tests)
+- Prepare backend file upload API
 
-## Next Steps:
+## Day 3:
+- Integrate NanoBanana API for AI-generated images
+- Start story text generation integration
 
-- Day 2: Make file upload functional & implement image preview (test first)  
-- Day 3: Setup backend file upload API (with tests) and start NanoBanana integration  
-- Day 4+: Add story generation, book preview, exporting, etc. (all test-covered)  
+## Days 4–7:
+- Interactive story preview, export, polishing, deployment
 ```
 
 ***
 
-### Coach’s Advice
-
-- Writing tests first formalizes requirements and ensures you don’t waste time on unneeded features  
-- Use Gemini AI tool in Qoder for generating tests and React components faster  
-- Start small, keep tests focused and code minimal  
-- Early testing makes debugging far easier  
+### Coach Tips for Today  
+- Write tests **before** coding features to guide development and catch bugs early.  
+- Use **Google Gemini AI in Qoder IDE** to auto-generate test and component boilerplate faster.  
+- Commit often with descriptive messages to track progress.  
+- Don’t rush — thorough testing and clean code pay off in later steps.
 
 ***
 
-If you want, I can walk you through **writing tests for file upload next** or **help with backend API testing setup**.  
-Let me know how to support your TDD journey!
+**By following this detailed stepwise tutorial you’ll:**
+
+- Build a strong, test-covered foundation for Snapptale  
+- Gain familiarity with React, Next.js App Router, TDD, and Tailwind CSS  
+- Prepare your project for adding AI image and story generation smoothly
+
+***
+
+**Ready for Day 2 (File Upload & Preview) whenever you are — I’ll provide the step-by-step with tests included!**
