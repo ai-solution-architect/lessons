@@ -1,144 +1,110 @@
 # Snapptale — Day 1 Development Guide  
-### Kickoff, Tooling Setup & Initial UI Scaffold with React Router  
+### Kickoff, Tooling & Initial Scaffold with Next.js App Router  
 *Goal: Complete within ~2 hours tonight*
 
 ***
 
-## 🚦 Day 1: Project Kickoff – Tooling, Planning and Environment Setup
+## 🚦 Day 1: Kickoff & Setup — Next.js App Router + Tailwind + TypeScript
 
-### Goal:
-By the end of today’s 2-hour session, you will have:  
-- Installed and configured all essential tools  
-- Bootstrapped a fresh Next.js + React + TypeScript app with Tailwind CSS & ESLint  
-- Initialized Git version control  
-- Set up basic React App Routing for multi-page navigation  
-- Created a simple placeholder landing page with a disabled upload input  
-- Written a clear roadmap for the following development steps
+### Goal for Today  
+By the end of this session you will have:
 
-***
-
-### 1. 📋 What You’re Building Today  
-You will create the very first working version of **Snapptale**, a web app that:  
-- Lets users upload a child’s photo (UI placeholder only at this stage)  
-- Has multiple routes (pages) ready for future storybook steps  
-- Shows a welcoming landing homepage  
-> **Note:** No AI integration today—focus on setting up routing and your dev environment.
+- Installed all essential tools including Node.js, Git, Qoder IDE  
+- Bootstrapped a new Next.js project with the **App Router** (under `src/app`)  
+- Set up TypeScript, ESLint, and Tailwind CSS  
+- Created a basic homepage and an upload page routed via the new App Router  
+- Written a clear roadmap for subsequent days
 
 ***
 
-### 2. 🛠 Essential Tools Setup — Install & Prepare
-
-| Tool                 | Purpose                                               | Where to Get / Notes                                           |
-|----------------------|------------------------------------------------------|----------------------------------------------------------------|
-| **Node.js (LTS)**    | Run JavaScript runtime & Next.js framework           | [https://nodejs.org](https://nodejs.org) (v18+ recommended)    |
-| **Git**              | Version control                                       | [https://git-scm.com](https://git-scm.com)                    |
-| **Qoder IDE**        | Your preferred development environment                | Download and install the latest from your source               |
-| **GitHub Account**   | Remote Git repository hosting                         | [https://github.com](https://github.com)                      |
-| **React + Next.js**  | React app framework with SSR & routing                | Installed via `create-next-app` CLI                            |
-| **TypeScript**       | Typed superset of JavaScript for code safety          | Integrated via scaffolding                                      |
-| **Tailwind CSS**     | Utility-first CSS for fast styling & responsiveness   | Setup integrated in Next.js scaffolding                        |
-| **ESLint**           | Linting & code quality                                | Setup integrated in scaffolding                                |
-| **React Router DOM** | Client-side routing library for React apps           | To be added via npm; enables multi-page SPA routing            |
-| **Google Gemini CLI + Qoder AI Tool** | AI assistant to speed up coding           | Configure in Qoder for contextual AI fetch & code generation   |
-| **Figma (optional)** | UI design and prototyping                             | [https://figma.com](https://figma.com), good for early UI sketching                 |
+## 1. What You’re Building Today  
+- A simple React-based web app named **Snapptale**  
+- Homepage with welcoming title and navigation  
+- Upload page with an (initially disabled) photo upload input  
+- Learn newest React routing style (App Router)  
+> **Note:** No AI integration yet — focus on beginner-friendly project setup and routing foundation.
 
 ***
 
-### 3. 🏗 Step-by-Step for Day 1 (First 2 Hours)
+## 2. Tools You’ll Need  
+
+| Tool                     | Purpose                          | Where to get it                              |
+|--------------------------|---------------------------------|----------------------------------------------|
+| Node.js (LTS)            | JavaScript runtime              | [nodejs.org](https://nodejs.org)             |
+| Git                      | Version control                 | [git-scm.com](https://git-scm.com)           |
+| Qoder IDE                | Your development environment    | Your Qoder source/download                    |
+| GitHub                   | Source control hosting          | [github.com](https://github.com)              |
+| React + Next.js          | Frontend framework              | Bootstrapped via CLI                          |
+| TypeScript               | Typed JS                       | Included in bootstrapping                      |
+| ESLint                   | Code quality                   | Included in bootstrapping                      |
+| Tailwind CSS             | Styling                       | Included in bootstrapping                      |
+| Google Gemini CLI + Qoder AI | Code assistance (optional)      | Enable within Qoder                           |
+| Figma (optional)         | UI prototyping                 | [figma.com](https://figma.com)                 |
 
 ***
 
-#### 0 - Prepare Your Environment (Approx. 20 minutes)
+## 3. Step-by-Step Development: Day 1 (2 Hours)
 
-1. **Install Node.js and Git.**  
-   Verify with:  
-   ```bash
-   node -v
-   git --version
-   ```
-2. **Install or Open Qoder IDE.**  
-   Enable **Google Gemini CLI** and **Qoder AI assistant** plugins.
+### Step 0 — Prep Environment (20 mins)  
+- Install Node.js & Git, verify with:  
+```bash
+node -v
+git --version
+```
+- Open Qoder IDE, enable GPT-powered Google Gemini CLI and AI assistant plugins.
 
 ***
 
-#### 1 - Initialize Your Project Folder & Git (10 minutes)
+### Step 1 — Start Your Project (10 mins)
 
-In Qoder terminal:
-
+In Qoder terminal, create project folder & init Git:  
 ```bash
 mkdir snapptale
 cd snapptale
 git init
 ```
 
-Create GitHub repo “snapptale” and link it (optional for today).
-
 ***
 
-#### 2 - Bootstrap Your App with Next.js + Tailwind + TypeScript + ESLint (20 minutes)
+### Step 2 — Scaffold Next.js App (App Router + TS + Tailwind + ESLint) (25 mins)
 
-Run:
-
+Run official Next.js CLI for App Router (the default now):  
 ```bash
 npx create-next-app@latest . --typescript --eslint --tailwind
 ```
 
-Confirm Yes to TS, ESLint, Tailwind CSS prompts, No to experimental features.
+- Accept defaults, say **No** to experimental features.  
+- Wait for install to complete.
 
 ***
 
-#### 3 - Install React Router DOM (5 minutes)
+### Step 3 — Explore Folder Structure  
 
-Install React Router DOM for client-side routing:
-
-```bash
-npm install react-router-dom @types/react-router-dom
+Your core routing lives inside:  
 ```
+/src/app
+```
+
+- `src/app/page.tsx` → Homepage  
+- Create other pages as folders: e.g., `src/app/upload/page.tsx`
 
 ***
 
-#### 4 - Set Up Basic React Routing (30 minutes)
+### Step 4 — Create Homepage (`src/app/page.tsx`) (20 mins)
 
-In `src` folder, create router boilerplate:
-
-- Create `src/App.tsx` with routing logic:
+Replace existing content in `src/app/page.tsx` with:
 
 ```tsx
-import React from 'react';
-import { BrowserRouter as Router, Routes, Route, Navigate } from 'react-router-dom';
-import Home from './pages/Home';
-import Upload from './pages/Upload';
-
-function App() {
-  return (
-    <Router>
-      <Routes>
-        <Route path="/" element={<Home />} />
-        <Route path="/upload" element={<Upload />} />
-        <Route path="*" element={<Navigate replace to="/" />} />
-      </Routes>
-    </Router>
-  );
-}
-
-export default App;
-```
-
-- Create folder `/pages` and inside create:
-
-`Home.tsx`:
-```tsx
-import React from 'react';
-import { Link } from 'react-router-dom';
+import Link from 'next/link';
 
 export default function Home() {
   return (
-    <main className="flex flex-col items-center justify-center min-h-screen bg-gray-100 p-6">
-      <h1 className="text-5xl font-extrabold mb-6 text-blue-600">Snapptale</h1>
-      <p className="text-lg mb-8">Welcome! Start by uploading a photo of your child.</p>
+    <main className="flex flex-col items-center justify-center min-h-screen bg-gray-100 p-8">
+      <h1 className="text-5xl font-extrabold text-blue-600 mb-6">Snapptale</h1>
+      <p className="text-lg mb-8">Upload a photo to begin your personalized storybook journey</p>
       <Link
-        to="/upload"
-        className="bg-blue-600 hover:bg-blue-700 text-white px-6 py-3 rounded"
+        href="/upload"
+        className="bg-blue-600 hover:bg-blue-700 text-white px-6 py-3 rounded focus:outline-none focus:ring-2 focus:ring-blue-500"
       >
         Go to Upload
       </Link>
@@ -147,21 +113,29 @@ export default function Home() {
 }
 ```
 
-`Upload.tsx`:
-```tsx
-import React from 'react';
+Save and check with your dev server.
 
+***
+
+### Step 5 — Create Upload Page (`src/app/upload/page.tsx`) (20 mins)
+
+Create new folder `src/app/upload/` and add `page.tsx` with:
+
+```tsx
 export default function Upload() {
   return (
-    <main className="flex flex-col items-center justify-center min-h-screen bg-gray-100 p-6">
+    <main className="flex flex-col items-center justify-center min-h-screen bg-gray-100 p-8">
       <h1 className="text-4xl font-bold mb-6">Upload Photo</h1>
       <input
         type="file"
         accept="image/*"
-        className="mb-8 p-2 border border-gray-400 rounded"
+        className="border border-gray-400 p-2 rounded mb-6"
         disabled
       />
-      <button className="bg-blue-500 text-white px-6 py-3 rounded opacity-50 cursor-not-allowed" disabled>
+      <button
+        disabled
+        className="bg-gray-400 cursor-not-allowed px-6 py-3 rounded text-white"
+      >
         Next (coming soon)
       </button>
     </main>
@@ -169,90 +143,79 @@ export default function Upload() {
 }
 ```
 
-- Update `src/pages/index.tsx` to just render `<App />`:
-
-```tsx
-import React from 'react';
-import App from '../App';
-
-export default function Index() {
-  return <App />;
-}
-```
-
 ***
 
-#### 5 - Run & Verify (5 minutes)
+### Step 6 — Run and Confirm (5 mins)  
+
+Launch dev server:
 
 ```bash
 npm run dev
 ```
 
-Visit [http://localhost:3000](http://localhost:3000), verify navigation from homepage to upload page.
+Verify:  
+- [http://localhost:3000](http://localhost:3000) shows homepage  
+- Click “Go to Upload” → [http://localhost:3000/upload](http://localhost:3000/upload) shows upload page
 
 ***
 
-#### 6 - Initial Git Commit (5 minutes)
+### Step 7 — Commit Your Work (5 mins)
 
 ```bash
 git add .
-git commit -m "Setup Next.js with React Router, Tailwind, TS scaffold; Home and Upload pages"
+git commit -m "Init Snapptale with Next.js App Router, TS, ESLint, Tailwind. Added Home and Upload pages"
 ```
 
 ***
 
-#### 7 - Write Your Development Roadmap (5 minutes)
+### Step 8 — Plan Ahead (5 mins)
 
-Create/update `README.md` or notes with:
+Create/update `README.md` with roadmap draft:
 
 ```markdown
-## Snapptale Development Roadmap
+# Snapptale Development Roadmap
 
-### Day 1 - Setup & Initial UI with Routing (Done)
+## Day 1 (Done)
+- Scaffold Next.js app with App Router + Tailwind + TypeScript + ESLint
+- Create homepage + upload page with routing
 
-- Scaffolded Next.js + TypeScript + Tailwind + React Router
-- Created Home & Upload pages with navigation
+## Day 2
+- Implement active photo upload & preview UI
+- Setup backend API to accept uploads
 
-### Day 2 - Enable photo upload & preview
+## Day 3
+- Integrate Gemini AI API (via CLI) calls for images + story text
 
-- Implement real file input & image preview on Upload page
-- Setup backend API for file storage
-
-### Day 3 - Integrate Gemini CLI for AI image & story generation
-
-- Add API calls for AI character art & story text
-
-### Day 4 - Show interactive storybook preview
-
-- Render generated story chapters and images
-- Add error and loading states
-
-### Day 5-7 - Export, polish, test, deploy MVP
+## Day 4-7
+- Build story preview UI, add export features, and refine UX/UI
+- Prepare for deployment & demo
 ```
 
 ***
 
-### Coach’s Pro Tips for Today:
+### Coach’s Tips for Today:
 
-- Use **Google Gemini CLI** and **Qoder AI Tool** inside Qoder IDE to generate code snippets for routing, components, and API calls quickly.  
-- Test navigation repeatedly to confirm routing works smoothly.  
-- Customize Tailwind config later to incorporate vibe’s color scheme.
-
-***
-
-### What You’ll Have by Tonight:  
-- React app scaffolded with TS, Tailwind, ESLint, and **React Router**  
-- Multi-page SPA running locally with Home and Upload routes  
-- Disabled upload input UI ready for next steps  
-- Git repo synced and roadmap committed
+- App Router simplifies routing—pages are files/folders inside `/app`  
+- Use Next.js `Link` component for client-side nav (no page reload)  
+- Experiment with Tailwind’s utility classes to quickly style elements  
+- Enable Google Gemini CLI in Qoder IDE for snippet assistance  
+- Focus on building solid structure, no need to implement AI today  
 
 ***
 
-### Want Next Steps?  
-Just ask:  
-**“Guide me through Day 2: Implementing file upload & image preview for Snapptale”**
+### You’ll Have (by end of session):
+
+- Fully functional dev environment (Node.js, Git, Qoder)  
+- Snapptale scaffolded Next.js app with `app` directory routing  
+- Home and Upload pages accessible via routing  
+- Committed baseline repo and initial roadmap drafted  
 
 ***
 
-**Follow this stepwise guide exactly and you’ll finish your first day strong, laying a solid foundation for a scalable React app with routing!**  
-I’m here to help with any config files, snippets, or troubleshooting as you go.
+**Ready for next steps? Just ask:**  
+*“Guide me with Day 2: Implementing real photo upload and preview in Snapptale”*
+
+***
+
+*This guide is carefully crafted to help React beginners build a modern scalable app foundation with the latest Next.js conventions.*  
+Feel free to ask for code snippets, error solving, or further explanations anytime!
